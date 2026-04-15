@@ -9,3 +9,4 @@ D:\Project\LAL\LAL.Core\obj\Debug\net8.0\LAL.Core.dll
 D:\Project\LAL\LAL.Core\obj\Debug\net8.0\refint\LAL.Core.dll
 D:\Project\LAL\LAL.Core\obj\Debug\net8.0\LAL.Core.pdb
 D:\Project\LAL\LAL.Core\obj\Debug\net8.0\ref\LAL.Core.dll
+D:\Project\LAL\LAL.Core\obj\Debug\net8.0\LAL.Core.sourcelink.json

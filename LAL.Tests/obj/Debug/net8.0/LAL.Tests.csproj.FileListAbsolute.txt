@@ -100,3 +100,4 @@ D:\Project\LAL\LAL.Tests\obj\Debug\net8.0\refint\LAL.Tests.dll
 D:\Project\LAL\LAL.Tests\obj\Debug\net8.0\LAL.Tests.pdb
 D:\Project\LAL\LAL.Tests\obj\Debug\net8.0\LAL.Tests.genruntimeconfig.cache
 D:\Project\LAL\LAL.Tests\obj\Debug\net8.0\ref\LAL.Tests.dll
+D:\Project\LAL\LAL.Tests\obj\Debug\net8.0\LAL.Tests.sourcelink.json

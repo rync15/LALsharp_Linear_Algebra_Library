@@ -58,8 +58,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "d:\\Project\\LAL\\LAL.Core\\LAL.Core.csproj": {
-              "projectPath": "d:\\Project\\LAL\\LAL.Core\\LAL.Core.csproj"
+            "D:\\Project\\LAL\\LAL.Core\\LAL.Core.csproj": {
+              "projectPath": "D:\\Project\\LAL\\LAL.Core\\LAL.Core.csproj"
             }
           }
         }
@@ -95,7 +95,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
