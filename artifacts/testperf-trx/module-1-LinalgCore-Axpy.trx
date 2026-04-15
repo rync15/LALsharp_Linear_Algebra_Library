@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="9d186915-646c-463a-889c-5829b67c5089" name="user@704DESKTOP 2026-04-14 13:12:00" runUser="704DESKTOP\user" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-04-14T13:12:00.3940457+08:00" queuing="2026-04-14T13:12:00.3940460+08:00" start="2026-04-14T13:11:59.7265462+08:00" finish="2026-04-14T13:12:00.4004487+08:00" />
+  <TestSettings name="default" id="8950790e-2af8-48f0-a589-0f099ca984ff">
+    <Deployment runDeploymentRoot="user_704DESKTOP_2026-04-14_13_12_00" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="c62e6b4c-ea9e-4ab8-833c-fe745586e2bf" testId="13c84eb2-a66d-cc27-c970-12b4e8caeb1c" testName="LAL.Tests.LinalgCore.InvariantPropertyTests.Axpy_MatchesReference_ForRandomInputs" computerName="704DESKTOP" duration="00:00:00.0062425" startTime="2026-04-14T13:12:00.2718156+08:00" endTime="2026-04-14T13:12:00.2718310+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c62e6b4c-ea9e-4ab8-833c-fe745586e2bf" />
+    <UnitTestResult executionId="4d9da332-9906-4bc7-a48a-0cde80b16b0b" testId="22b3584e-b5c7-fcfd-35ee-8daee17a6913" testName="LAL.Tests.LinalgCore.AxpyTests.Compute_Float_UpdatesYWithAlphaXPlusY" computerName="704DESKTOP" duration="00:00:00.0099759" startTime="2026-04-14T13:12:00.2745094+08:00" endTime="2026-04-14T13:12:00.2745097+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d9da332-9906-4bc7-a48a-0cde80b16b0b" />
+    <UnitTestResult executionId="247fd8c5-1ae8-4d00-99d9-c3f6cbf54826" testId="95d51773-adea-6140-c296-4644bbb36c64" testName="LAL.Tests.LinalgCore.AxpyTests.Compute_Complex_UpdatesYWithAlphaXPlusY" computerName="704DESKTOP" duration="00:00:00.0019045" startTime="2026-04-14T13:12:00.2753976+08:00" endTime="2026-04-14T13:12:00.2753977+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="247fd8c5-1ae8-4d00-99d9-c3f6cbf54826" />
+    <UnitTestResult executionId="2de9ddfd-6290-4ad0-a6da-d27d139fcf83" testId="8a8f465c-119b-1503-2777-6dc8b7a1c47e" testName="LAL.Tests.LinalgCore.AxpyTests.Compute_UpdatesYWithAlphaXPlusY" computerName="704DESKTOP" duration="00:00:00.0004453" startTime="2026-04-14T13:12:00.2748647+08:00" endTime="2026-04-14T13:12:00.2748647+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2de9ddfd-6290-4ad0-a6da-d27d139fcf83" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="LAL.Tests.LinalgCore.InvariantPropertyTests.Axpy_MatchesReference_ForRandomInputs" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="13c84eb2-a66d-cc27-c970-12b4e8caeb1c">
+      <Execution id="c62e6b4c-ea9e-4ab8-833c-fe745586e2bf" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.InvariantPropertyTests" name="Axpy_MatchesReference_ForRandomInputs" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.AxpyTests.Compute_Float_UpdatesYWithAlphaXPlusY" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="22b3584e-b5c7-fcfd-35ee-8daee17a6913">
+      <Execution id="4d9da332-9906-4bc7-a48a-0cde80b16b0b" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.AxpyTests" name="Compute_Float_UpdatesYWithAlphaXPlusY" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.AxpyTests.Compute_Complex_UpdatesYWithAlphaXPlusY" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="95d51773-adea-6140-c296-4644bbb36c64">
+      <Execution id="247fd8c5-1ae8-4d00-99d9-c3f6cbf54826" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.AxpyTests" name="Compute_Complex_UpdatesYWithAlphaXPlusY" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.AxpyTests.Compute_UpdatesYWithAlphaXPlusY" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="8a8f465c-119b-1503-2777-6dc8b7a1c47e">
+      <Execution id="2de9ddfd-6290-4ad0-a6da-d27d139fcf83" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.AxpyTests" name="Compute_UpdatesYWithAlphaXPlusY" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="13c84eb2-a66d-cc27-c970-12b4e8caeb1c" executionId="c62e6b4c-ea9e-4ab8-833c-fe745586e2bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22b3584e-b5c7-fcfd-35ee-8daee17a6913" executionId="4d9da332-9906-4bc7-a48a-0cde80b16b0b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="95d51773-adea-6140-c296-4644bbb36c64" executionId="247fd8c5-1ae8-4d00-99d9-c3f6cbf54826" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8a8f465c-119b-1503-2777-6dc8b7a1c47e" executionId="2de9ddfd-6290-4ad0-a6da-d27d139fcf83" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="不在清單中的結果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有載入的結果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.25)&#xD;
+[xUnit.net 00:00:00.07]   Discovering: LAL.Tests&#xD;
+[xUnit.net 00:00:00.11]   Discovered:  LAL.Tests&#xD;
+[xUnit.net 00:00:00.12]   Starting:    LAL.Tests&#xD;
+[xUnit.net 00:00:00.16]   Finished:    LAL.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

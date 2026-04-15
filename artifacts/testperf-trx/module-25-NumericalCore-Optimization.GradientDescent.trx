@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="eca346c0-2a01-4fde-9938-a8b0b321370c" name="user@704DESKTOP 2026-04-14 13:12:31" runUser="704DESKTOP\user" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-04-14T13:12:31.6436752+08:00" queuing="2026-04-14T13:12:31.6436754+08:00" start="2026-04-14T13:12:31.1275234+08:00" finish="2026-04-14T13:12:31.6481525+08:00" />
+  <TestSettings name="default" id="eb187410-a948-47ec-a35d-ec65439f6702">
+    <Deployment runDeploymentRoot="user_704DESKTOP_2026-04-14_13_12_31" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="f62ccb91-c4b3-4855-9142-2d5b62ef9515" testId="7ce53355-09ec-8f78-62b5-8322cfba5221" testName="LAL.Tests.NumericalCore.Optimization.GradientDescentTests.SolveScalar_ConvergesOnQuadraticMinimum" computerName="704DESKTOP" duration="00:00:00.0014524" startTime="2026-04-14T13:12:31.5477487+08:00" endTime="2026-04-14T13:12:31.5477487+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f62ccb91-c4b3-4855-9142-2d5b62ef9515" />
+    <UnitTestResult executionId="f7ff55b6-4a3e-4adf-b486-17a29300237a" testId="d32775d8-384e-5656-aee6-b66a0c63172e" testName="LAL.Tests.NumericalCore.Optimization.GradientDescentTests.SolveScalar_Complex_ConvergesOnQuadraticMinimum" computerName="704DESKTOP" duration="00:00:00.0005426" startTime="2026-04-14T13:12:31.5479745+08:00" endTime="2026-04-14T13:12:31.5479745+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7ff55b6-4a3e-4adf-b486-17a29300237a" />
+    <UnitTestResult executionId="8008c2f4-d203-441d-910e-63f7f6c34d35" testId="48981eaa-1720-8cd4-7c98-775df9e63b4e" testName="LAL.Tests.NumericalCore.Optimization.GradientDescentTests.SolveScalar_Float_ConvergesOnQuadraticMinimum" computerName="704DESKTOP" duration="00:00:00.0039613" startTime="2026-04-14T13:12:31.5458189+08:00" endTime="2026-04-14T13:12:31.5458334+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8008c2f4-d203-441d-910e-63f7f6c34d35" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="LAL.Tests.NumericalCore.Optimization.GradientDescentTests.SolveScalar_ConvergesOnQuadraticMinimum" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="7ce53355-09ec-8f78-62b5-8322cfba5221">
+      <Execution id="f62ccb91-c4b3-4855-9142-2d5b62ef9515" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.NumericalCore.Optimization.GradientDescentTests" name="SolveScalar_ConvergesOnQuadraticMinimum" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.NumericalCore.Optimization.GradientDescentTests.SolveScalar_Float_ConvergesOnQuadraticMinimum" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="48981eaa-1720-8cd4-7c98-775df9e63b4e">
+      <Execution id="8008c2f4-d203-441d-910e-63f7f6c34d35" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.NumericalCore.Optimization.GradientDescentTests" name="SolveScalar_Float_ConvergesOnQuadraticMinimum" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.NumericalCore.Optimization.GradientDescentTests.SolveScalar_Complex_ConvergesOnQuadraticMinimum" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="d32775d8-384e-5656-aee6-b66a0c63172e">
+      <Execution id="f7ff55b6-4a3e-4adf-b486-17a29300237a" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.NumericalCore.Optimization.GradientDescentTests" name="SolveScalar_Complex_ConvergesOnQuadraticMinimum" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="7ce53355-09ec-8f78-62b5-8322cfba5221" executionId="f62ccb91-c4b3-4855-9142-2d5b62ef9515" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d32775d8-384e-5656-aee6-b66a0c63172e" executionId="f7ff55b6-4a3e-4adf-b486-17a29300237a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="48981eaa-1720-8cd4-7c98-775df9e63b4e" executionId="8008c2f4-d203-441d-910e-63f7f6c34d35" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="不在清單中的結果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有載入的結果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.25)&#xD;
+[xUnit.net 00:00:00.05]   Discovering: LAL.Tests&#xD;
+[xUnit.net 00:00:00.08]   Discovered:  LAL.Tests&#xD;
+[xUnit.net 00:00:00.08]   Starting:    LAL.Tests&#xD;
+[xUnit.net 00:00:00.12]   Finished:    LAL.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

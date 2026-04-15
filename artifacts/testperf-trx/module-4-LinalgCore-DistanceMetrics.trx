@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="e1994a6e-2372-4bc8-9d12-b2480add2c75" name="user@704DESKTOP 2026-04-14 13:12:04" runUser="704DESKTOP\user" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-04-14T13:12:04.7645553+08:00" queuing="2026-04-14T13:12:04.7645556+08:00" start="2026-04-14T13:12:04.1830790+08:00" finish="2026-04-14T13:12:04.7691930+08:00" />
+  <TestSettings name="default" id="02862c08-fb4d-4c73-bc11-ccd4f0a611cb">
+    <Deployment runDeploymentRoot="user_704DESKTOP_2026-04-14_13_12_04" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="fd529ab1-40be-4b55-bb07-cc47176d142f" testId="d0f1093a-09fc-889b-2744-cae1715aebab" testName="LAL.Tests.LinalgCore.DistanceMetricsTests.PairwiseCosine_Complex_UsesMagnitudeNormalizedInnerProduct" computerName="704DESKTOP" duration="00:00:00.0043017" startTime="2026-04-14T13:12:04.6483096+08:00" endTime="2026-04-14T13:12:04.6483241+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd529ab1-40be-4b55-bb07-cc47176d142f" />
+    <UnitTestResult executionId="bdf7497b-5572-4b9d-b7b3-f22d86164f57" testId="397a54ca-23a8-3880-5afd-3e0cb33636ae" testName="LAL.Tests.LinalgCore.DistanceMetricsTests.PairwiseEuclidean_Complex_ComputesExpectedDistance" computerName="704DESKTOP" duration="00:00:00.0002624" startTime="2026-04-14T13:12:04.6543570+08:00" endTime="2026-04-14T13:12:04.6543572+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bdf7497b-5572-4b9d-b7b3-f22d86164f57" />
+    <UnitTestResult executionId="924a8571-383c-4e34-b171-9de12078cb16" testId="a8522380-6765-fb86-3a3a-1d5c5c0b97c9" testName="LAL.Tests.LinalgCore.DistanceMetricsTests.PairwiseMahalanobis_WithIdentityInverseCovariance_EqualsEuclidean" computerName="704DESKTOP" duration="00:00:00.0010550" startTime="2026-04-14T13:12:04.6523493+08:00" endTime="2026-04-14T13:12:04.6523493+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="924a8571-383c-4e34-b171-9de12078cb16" />
+    <UnitTestResult executionId="f1d8b3ac-724a-404d-9f2b-56ed8fefd530" testId="16d7a1a8-a405-7686-34b4-a3c5486b60eb" testName="LAL.Tests.LinalgCore.DistanceMetricsTests.PairwiseEuclidean_ComputesExpectedMatrix" computerName="704DESKTOP" duration="00:00:00.0002432" startTime="2026-04-14T13:12:04.6526439+08:00" endTime="2026-04-14T13:12:04.6526440+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f1d8b3ac-724a-404d-9f2b-56ed8fefd530" />
+    <UnitTestResult executionId="35de1217-80b9-4d1d-b5fd-58dd9a4f23f7" testId="0cc5603f-19eb-36f5-6ab7-05554d33094e" testName="LAL.Tests.LinalgCore.DistanceMetricsTests.PairwiseMahalanobis_Complex_WithIdentityInverseCovariance_EqualsEuclidean" computerName="704DESKTOP" duration="00:00:00.0013378" startTime="2026-04-14T13:12:04.6540378+08:00" endTime="2026-04-14T13:12:04.6540379+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="35de1217-80b9-4d1d-b5fd-58dd9a4f23f7" />
+    <UnitTestResult executionId="fbca1638-8fb8-49a3-b66e-193b242ff042" testId="ba256e5e-d30a-bda2-06a6-c399d52808c3" testName="LAL.Tests.LinalgCore.DistanceMetricsTests.PairwiseCosine_ComputesExpectedDistances" computerName="704DESKTOP" duration="00:00:00.0033289" startTime="2026-04-14T13:12:04.6512672+08:00" endTime="2026-04-14T13:12:04.6512673+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fbca1638-8fb8-49a3-b66e-193b242ff042" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="LAL.Tests.LinalgCore.DistanceMetricsTests.PairwiseCosine_ComputesExpectedDistances" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="ba256e5e-d30a-bda2-06a6-c399d52808c3">
+      <Execution id="fbca1638-8fb8-49a3-b66e-193b242ff042" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.DistanceMetricsTests" name="PairwiseCosine_ComputesExpectedDistances" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.DistanceMetricsTests.PairwiseEuclidean_Complex_ComputesExpectedDistance" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="397a54ca-23a8-3880-5afd-3e0cb33636ae">
+      <Execution id="bdf7497b-5572-4b9d-b7b3-f22d86164f57" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.DistanceMetricsTests" name="PairwiseEuclidean_Complex_ComputesExpectedDistance" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.DistanceMetricsTests.PairwiseMahalanobis_WithIdentityInverseCovariance_EqualsEuclidean" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="a8522380-6765-fb86-3a3a-1d5c5c0b97c9">
+      <Execution id="924a8571-383c-4e34-b171-9de12078cb16" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.DistanceMetricsTests" name="PairwiseMahalanobis_WithIdentityInverseCovariance_EqualsEuclidean" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.DistanceMetricsTests.PairwiseMahalanobis_Complex_WithIdentityInverseCovariance_EqualsEuclidean" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="0cc5603f-19eb-36f5-6ab7-05554d33094e">
+      <Execution id="35de1217-80b9-4d1d-b5fd-58dd9a4f23f7" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.DistanceMetricsTests" name="PairwiseMahalanobis_Complex_WithIdentityInverseCovariance_EqualsEuclidean" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.DistanceMetricsTests.PairwiseEuclidean_ComputesExpectedMatrix" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="16d7a1a8-a405-7686-34b4-a3c5486b60eb">
+      <Execution id="f1d8b3ac-724a-404d-9f2b-56ed8fefd530" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.DistanceMetricsTests" name="PairwiseEuclidean_ComputesExpectedMatrix" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.DistanceMetricsTests.PairwiseCosine_Complex_UsesMagnitudeNormalizedInnerProduct" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="d0f1093a-09fc-889b-2744-cae1715aebab">
+      <Execution id="fd529ab1-40be-4b55-bb07-cc47176d142f" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.DistanceMetricsTests" name="PairwiseCosine_Complex_UsesMagnitudeNormalizedInnerProduct" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="d0f1093a-09fc-889b-2744-cae1715aebab" executionId="fd529ab1-40be-4b55-bb07-cc47176d142f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="397a54ca-23a8-3880-5afd-3e0cb33636ae" executionId="bdf7497b-5572-4b9d-b7b3-f22d86164f57" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a8522380-6765-fb86-3a3a-1d5c5c0b97c9" executionId="924a8571-383c-4e34-b171-9de12078cb16" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16d7a1a8-a405-7686-34b4-a3c5486b60eb" executionId="f1d8b3ac-724a-404d-9f2b-56ed8fefd530" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0cc5603f-19eb-36f5-6ab7-05554d33094e" executionId="35de1217-80b9-4d1d-b5fd-58dd9a4f23f7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ba256e5e-d30a-bda2-06a6-c399d52808c3" executionId="fbca1638-8fb8-49a3-b66e-193b242ff042" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="不在清單中的結果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有載入的結果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="6" executed="6" passed="6" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.25)&#xD;
+[xUnit.net 00:00:00.05]   Discovering: LAL.Tests&#xD;
+[xUnit.net 00:00:00.08]   Discovered:  LAL.Tests&#xD;
+[xUnit.net 00:00:00.09]   Starting:    LAL.Tests&#xD;
+[xUnit.net 00:00:00.14]   Finished:    LAL.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

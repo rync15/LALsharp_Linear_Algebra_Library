@@ -1,0 +1,11 @@
+D:\Project\LAL\LAL.Core\bin\Release\net8.0\LAL.Core.deps.json
+D:\Project\LAL\LAL.Core\bin\Release\net8.0\LAL.Core.dll
+D:\Project\LAL\LAL.Core\bin\Release\net8.0\LAL.Core.pdb
+D:\Project\LAL\LAL.Core\obj\Release\net8.0\LAL.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\LAL\LAL.Core\obj\Release\net8.0\LAL.Core.AssemblyInfoInputs.cache
+D:\Project\LAL\LAL.Core\obj\Release\net8.0\LAL.Core.AssemblyInfo.cs
+D:\Project\LAL\LAL.Core\obj\Release\net8.0\LAL.Core.csproj.CoreCompileInputs.cache
+D:\Project\LAL\LAL.Core\obj\Release\net8.0\LAL.Core.dll
+D:\Project\LAL\LAL.Core\obj\Release\net8.0\refint\LAL.Core.dll
+D:\Project\LAL\LAL.Core\obj\Release\net8.0\LAL.Core.pdb
+D:\Project\LAL\LAL.Core\obj\Release\net8.0\ref\LAL.Core.dll

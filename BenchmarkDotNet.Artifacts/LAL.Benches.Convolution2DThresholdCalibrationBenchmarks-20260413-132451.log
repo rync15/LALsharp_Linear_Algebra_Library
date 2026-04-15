@@ -1,0 +1,1496 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 18 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81
+// command took 1.17 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81
+// command took 3.3 sec and exited with 0
+// ***** Done, took 00:00:04 (4.54 sec)   *****
+// Found 18 benchmarks:
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=5]
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=5]
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=5]
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=9]
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=9]
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=9]
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=5]
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=5]
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=5]
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=9]
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=9]
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=9]
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=5]
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=5]
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=5]
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=9]
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=9]
+//   Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=9]
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=5]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1512 1516 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate(SignalSize: 48, KernelSize: 5)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 0 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-RKWCDX(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 610700.00 ns, 610.7000 us/op
+WorkloadJitting  1: 1 op, 103860800.00 ns, 103.8608 ms/op
+
+OverheadWarmup   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   5: 1 op, 200.00 ns, 200.0000 ns/op
+
+OverheadActual   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   3: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   4: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   7: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   8: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   9: 1 op, 9700.00 ns, 9.7000 us/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  12: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  13: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  14: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  15: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  16: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  17: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  18: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  19: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  20: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 72100.00 ns, 72.1000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 66900.00 ns, 66.9000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 66700.00 ns, 66.7000 us/op
+// GC:  0 0 0 400 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 46132 has exited with code 0.
+
+Mean = 66.700 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 66.700 μs, Q1 = 66.700 μs, Median = 66.700 μs, Q3 = 66.700 μs, Max = 66.700 μs
+IQR = 0.000 μs, LowerFence = 66.700 μs, UpperFence = 66.700 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 17 (94.4%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=5]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1356 1352 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate(SignalSize: 48, KernelSize: 5)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 1 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-NUGFLW(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 475400.00 ns, 475.4000 us/op
+WorkloadJitting  1: 1 op, 8326500.00 ns, 8.3265 ms/op
+
+OverheadWarmup   1: 1 op, 600.00 ns, 600.0000 ns/op
+OverheadWarmup   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   4: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   6: 1 op, 100.00 ns, 100.0000 ns/op
+
+OverheadActual   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   3: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   8: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   9: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  12: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  13: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  14: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  15: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  16: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadActual  17: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  18: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  19: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  20: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 597900.00 ns, 597.9000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 431100.00 ns, 431.1000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 430900.00 ns, 430.9000 us/op
+// GC:  0 0 0 45776 1
+// Threading:  15 0 1
+
+// AfterAll
+// Benchmark Process 48812 has exited with code 0.
+
+Mean = 430.900 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 430.900 μs, Q1 = 430.900 μs, Median = 430.900 μs, Q3 = 430.900 μs, Max = 430.900 μs
+IQR = 0.000 μs, LowerFence = 430.900 μs, UpperFence = 430.900 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 16 (88.9%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=5]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1456 1452 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate(SignalSize: 48, KernelSize: 5)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 2 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-KGPXIE(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 617100.00 ns, 617.1000 us/op
+WorkloadJitting  1: 1 op, 2125300.00 ns, 2.1253 ms/op
+
+OverheadWarmup   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   5: 1 op, 200.00 ns, 200.0000 ns/op
+
+OverheadActual   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   3: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   8: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   9: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  12: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  13: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  14: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  15: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  16: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  19: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  20: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 67300.00 ns, 67.3000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 68400.00 ns, 68.4000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 68200.00 ns, 68.2000 us/op
+// GC:  0 0 0 400 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 61024 has exited with code 0.
+
+Mean = 68.200 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 68.200 μs, Q1 = 68.200 μs, Median = 68.200 μs, Q3 = 68.200 μs, Max = 68.200 μs
+IQR = 0.000 μs, LowerFence = 68.200 μs, UpperFence = 68.200 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 15 (83.3%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=9]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1504 1444 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate(SignalSize: 48, KernelSize: 9)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 3 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-UKCIQI(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 1450100.00 ns, 1.4501 ms/op
+WorkloadJitting  1: 1 op, 4226300.00 ns, 4.2263 ms/op
+
+OverheadWarmup   1: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadWarmup   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   3: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   5: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   6: 1 op, 200.00 ns, 200.0000 ns/op
+
+OverheadActual   1: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadActual   2: 1 op, 1100.00 ns, 1.1000 us/op
+OverheadActual   3: 1 op, 1300.00 ns, 1.3000 us/op
+OverheadActual   4: 1 op, 600.00 ns, 600.0000 ns/op
+OverheadActual   5: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   8: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   9: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  12: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  13: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  14: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  15: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  16: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  17: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  18: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  19: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  20: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 162000.00 ns, 162.0000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 183800.00 ns, 183.8000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 183600.00 ns, 183.6000 us/op
+// GC:  0 0 0 400 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 352 has exited with code 0.
+
+Mean = 183.600 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 183.600 μs, Q1 = 183.600 μs, Median = 183.600 μs, Q3 = 183.600 μs, Max = 183.600 μs
+IQR = 0.000 μs, LowerFence = 183.600 μs, UpperFence = 183.600 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 14 (77.8%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=9]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1624 1620 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate(SignalSize: 48, KernelSize: 9)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 4 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-FBGCVS(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 486300.00 ns, 486.3000 us/op
+WorkloadJitting  1: 1 op, 11091200.00 ns, 11.0912 ms/op
+
+OverheadWarmup   1: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   2: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   3: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   4: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   5: 1 op, 300.00 ns, 300.0000 ns/op
+
+OverheadActual   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   3: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadActual   4: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   5: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   6: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   7: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   8: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   9: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  10: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  11: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  12: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  13: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  14: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  15: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  16: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  19: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  20: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 783000.00 ns, 783.0000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 618300.00 ns, 618.3000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 618100.00 ns, 618.1000 us/op
+// GC:  0 0 0 49680 1
+// Threading:  15 0 1
+
+// AfterAll
+// Benchmark Process 3680 has exited with code 0.
+
+Mean = 618.100 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 618.100 μs, Q1 = 618.100 μs, Median = 618.100 μs, Q3 = 618.100 μs, Max = 618.100 μs
+IQR = 0.000 μs, LowerFence = 618.100 μs, UpperFence = 618.100 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 13 (72.2%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=9]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1340 1348 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate(SignalSize: 48, KernelSize: 9)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 5 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-OHRTGN(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 564300.00 ns, 564.3000 us/op
+WorkloadJitting  1: 1 op, 2134900.00 ns, 2.1349 ms/op
+
+OverheadWarmup   1: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   3: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   6: 1 op, 200.00 ns, 200.0000 ns/op
+
+OverheadActual   1: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   5: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   8: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   9: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  12: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  13: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  14: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  15: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  16: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  17: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  18: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  19: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  20: 1 op, 100.00 ns, 100.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 168200.00 ns, 168.2000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 168700.00 ns, 168.7000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 168500.00 ns, 168.5000 us/op
+// GC:  0 0 0 400 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 35028 has exited with code 0.
+
+Mean = 168.500 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 168.500 μs, Q1 = 168.500 μs, Median = 168.500 μs, Q3 = 168.500 μs, Max = 168.500 μs
+IQR = 0.000 μs, LowerFence = 168.500 μs, UpperFence = 168.500 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 12 (66.7%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=5]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1444 1656 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate(SignalSize: 64, KernelSize: 5)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 6 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-OWJFPW(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 710600.00 ns, 710.6000 us/op
+WorkloadJitting  1: 1 op, 3483900.00 ns, 3.4839 ms/op
+
+OverheadWarmup   1: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   3: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   7: 1 op, 200.00 ns, 200.0000 ns/op
+
+OverheadActual   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   2: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   4: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   8: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   9: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  10: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  11: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  12: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  13: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  14: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  15: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  16: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  17: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  18: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  19: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  20: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 89100.00 ns, 89.1000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 101300.00 ns, 101.3000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 101100.00 ns, 101.1000 us/op
+// GC:  0 0 0 400 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 41492 has exited with code 0.
+
+Mean = 101.100 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 101.100 μs, Q1 = 101.100 μs, Median = 101.100 μs, Q3 = 101.100 μs, Max = 101.100 μs
+IQR = 0.000 μs, LowerFence = 101.100 μs, UpperFence = 101.100 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 11 (61.1%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=5]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1484 1452 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate(SignalSize: 64, KernelSize: 5)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 7 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-JOBEDG(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 491700.00 ns, 491.7000 us/op
+WorkloadJitting  1: 1 op, 9392800.00 ns, 9.3928 ms/op
+
+OverheadWarmup   1: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   6: 1 op, 200.00 ns, 200.0000 ns/op
+
+OverheadActual   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   4: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   7: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   8: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   9: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  12: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  13: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  14: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  15: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  16: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  19: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  20: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 833800.00 ns, 833.8000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 603200.00 ns, 603.2000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 603000.00 ns, 603.0000 us/op
+// GC:  0 0 0 75472 1
+// Threading:  15 0 1
+
+// AfterAll
+// Benchmark Process 26488 has exited with code 0.
+
+Mean = 603.000 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 603.000 μs, Q1 = 603.000 μs, Median = 603.000 μs, Q3 = 603.000 μs, Max = 603.000 μs
+IQR = 0.000 μs, LowerFence = 603.000 μs, UpperFence = 603.000 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 10 (55.6%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=5]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1452 1340 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate(SignalSize: 64, KernelSize: 5)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 8 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-TUYOZK(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 1184800.00 ns, 1.1848 ms/op
+WorkloadJitting  1: 1 op, 2133200.00 ns, 2.1332 ms/op
+
+OverheadWarmup   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   2: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   6: 1 op, 200.00 ns, 200.0000 ns/op
+
+OverheadActual   1: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   3: 1 op, 700.00 ns, 700.0000 ns/op
+OverheadActual   4: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 0.00 ns, 0.0000 ns/op
+OverheadActual   7: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   8: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   9: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  10: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  11: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  12: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  13: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  14: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  15: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  16: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  19: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  20: 1 op, 100.00 ns, 100.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 89500.00 ns, 89.5000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 81300.00 ns, 81.3000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 81150.00 ns, 81.1500 us/op
+// GC:  0 0 0 400 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 11760 has exited with code 0.
+
+Mean = 81.150 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 81.150 μs, Q1 = 81.150 μs, Median = 81.150 μs, Q3 = 81.150 μs, Max = 81.150 μs
+IQR = 0.000 μs, LowerFence = 81.150 μs, UpperFence = 81.150 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 9 (50.0%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=9]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1404 1636 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate(SignalSize: 64, KernelSize: 9)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 9 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-QHJGQU(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 470600.00 ns, 470.6000 us/op
+WorkloadJitting  1: 1 op, 2240900.00 ns, 2.2409 ms/op
+
+OverheadWarmup   1: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   4: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   5: 1 op, 100.00 ns, 100.0000 ns/op
+
+OverheadActual   1: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   4: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   7: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   8: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   9: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  10: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  11: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  12: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  13: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  14: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  15: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  16: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  17: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  18: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  19: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  20: 1 op, 100.00 ns, 100.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 226900.00 ns, 226.9000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 222000.00 ns, 222.0000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 221900.00 ns, 221.9000 us/op
+// GC:  0 0 0 400 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 58324 has exited with code 0.
+
+Mean = 221.900 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 221.900 μs, Q1 = 221.900 μs, Median = 221.900 μs, Q3 = 221.900 μs, Max = 221.900 μs
+IQR = 0.000 μs, LowerFence = 221.900 μs, UpperFence = 221.900 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 8 (44.4%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=9]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1544 1540 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate(SignalSize: 64, KernelSize: 9)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 10 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-ULYFDP(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 608400.00 ns, 608.4000 us/op
+WorkloadJitting  1: 1 op, 13472300.00 ns, 13.4723 ms/op
+
+OverheadWarmup   1: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   5: 1 op, 400.00 ns, 400.0000 ns/op
+
+OverheadActual   1: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   2: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   3: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   4: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   5: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   8: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   9: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  12: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  13: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  14: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  15: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  16: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  19: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  20: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 1001700.00 ns, 1.0017 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 745300.00 ns, 745.3000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 745100.00 ns, 745.1000 us/op
+// GC:  0 0 0 80400 1
+// Threading:  15 0 1
+
+// AfterAll
+// Benchmark Process 49672 has exited with code 0.
+
+Mean = 745.100 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 745.100 μs, Q1 = 745.100 μs, Median = 745.100 μs, Q3 = 745.100 μs, Max = 745.100 μs
+IQR = 0.000 μs, LowerFence = 745.100 μs, UpperFence = 745.100 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 7 (38.9%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=9]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1516 1356 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate(SignalSize: 64, KernelSize: 9)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 11 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-JVGCBE(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 421800.00 ns, 421.8000 us/op
+WorkloadJitting  1: 1 op, 2248700.00 ns, 2.2487 ms/op
+
+OverheadWarmup   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   3: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   5: 1 op, 200.00 ns, 200.0000 ns/op
+
+OverheadActual   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   8: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   9: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  12: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  13: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  14: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  15: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  16: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  19: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  20: 1 op, 100.00 ns, 100.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 231800.00 ns, 231.8000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 225200.00 ns, 225.2000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 225000.00 ns, 225.0000 us/op
+// GC:  0 0 0 400 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 54836 has exited with code 0.
+
+Mean = 225.000 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 225.000 μs, Q1 = 225.000 μs, Median = 225.000 μs, Q3 = 225.000 μs, Max = 225.000 μs
+IQR = 0.000 μs, LowerFence = 225.000 μs, UpperFence = 225.000 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 6 (33.3%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=5]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1340 1664 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate(SignalSize: 128, KernelSize: 5)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 12 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-HDNTMG(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 837400.00 ns, 837.4000 us/op
+WorkloadJitting  1: 1 op, 2357400.00 ns, 2.3574 ms/op
+
+OverheadWarmup   1: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadWarmup   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   6: 1 op, 100.00 ns, 100.0000 ns/op
+
+OverheadActual   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   8: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   9: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  12: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  13: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  14: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  15: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  16: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  19: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  20: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 319700.00 ns, 319.7000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 317900.00 ns, 317.9000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 317700.00 ns, 317.7000 us/op
+// GC:  0 0 0 400 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 4916 has exited with code 0.
+
+Mean = 317.700 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 317.700 μs, Q1 = 317.700 μs, Median = 317.700 μs, Q3 = 317.700 μs, Max = 317.700 μs
+IQR = 0.000 μs, LowerFence = 317.700 μs, UpperFence = 317.700 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 5 (27.8%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=5]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1632 1672 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate(SignalSize: 128, KernelSize: 5)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 13 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-YRHRGO(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 800700.00 ns, 800.7000 us/op
+WorkloadJitting  1: 1 op, 15799600.00 ns, 15.7996 ms/op
+
+OverheadWarmup   1: 1 op, 500.00 ns, 500.0000 ns/op
+OverheadWarmup   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   4: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   6: 1 op, 200.00 ns, 200.0000 ns/op
+
+OverheadActual   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   3: 1 op, 600.00 ns, 600.0000 ns/op
+OverheadActual   4: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   8: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   9: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  12: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  13: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  14: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  15: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  16: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  19: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual  20: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 852300.00 ns, 852.3000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 691700.00 ns, 691.7000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 691500.00 ns, 691.5000 us/op
+// GC:  0 0 0 275880 1
+// Threading:  13 0 1
+
+// AfterAll
+// Benchmark Process 58188 has exited with code 0.
+
+Mean = 691.500 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 691.500 μs, Q1 = 691.500 μs, Median = 691.500 μs, Q3 = 691.500 μs, Max = 691.500 μs
+IQR = 0.000 μs, LowerFence = 691.500 μs, UpperFence = 691.500 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 4 (22.2%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=5]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1632 1672 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate(SignalSize: 128, KernelSize: 5)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 14 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-QLKUOS(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 546900.00 ns, 546.9000 us/op
+WorkloadJitting  1: 1 op, 2525000.00 ns, 2.5250 ms/op
+
+OverheadWarmup   1: 1 op, 800.00 ns, 800.0000 ns/op
+OverheadWarmup   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   6: 1 op, 100.00 ns, 100.0000 ns/op
+
+OverheadActual   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   8: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   9: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  12: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  13: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  14: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  15: 1 op, 700.00 ns, 700.0000 ns/op
+OverheadActual  16: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  17: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  18: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual  19: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  20: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 321000.00 ns, 321.0000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 330000.00 ns, 330.0000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 329800.00 ns, 329.8000 us/op
+// GC:  0 0 0 400 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 25536 has exited with code 0.
+
+Mean = 329.800 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 329.800 μs, Q1 = 329.800 μs, Median = 329.800 μs, Q3 = 329.800 μs, Max = 329.800 μs
+IQR = 0.000 μs, LowerFence = 329.800 μs, UpperFence = 329.800 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 3 (16.7%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=9]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1552 1648 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate(SignalSize: 128, KernelSize: 9)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 15 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-IHLKRQ(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 519100.00 ns, 519.1000 us/op
+WorkloadJitting  1: 1 op, 2888200.00 ns, 2.8882 ms/op
+
+OverheadWarmup   1: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   6: 1 op, 100.00 ns, 100.0000 ns/op
+
+OverheadActual   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   2: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   7: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   8: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   9: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  12: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  13: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  14: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  15: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  16: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  17: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  18: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  19: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  20: 1 op, 100.00 ns, 100.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 863300.00 ns, 863.3000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 898200.00 ns, 898.2000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 898000.00 ns, 898.0000 us/op
+// GC:  0 0 0 400 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 53664 has exited with code 0.
+
+Mean = 898.000 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 898.000 μs, Q1 = 898.000 μs, Median = 898.000 μs, Q3 = 898.000 μs, Max = 898.000 μs
+IQR = 0.000 μs, LowerFence = 898.000 μs, UpperFence = 898.000 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 2 (11.1%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=9]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1656 1488 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate(SignalSize: 128, KernelSize: 9)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 16 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-WJRXQD(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 1417100.00 ns, 1.4171 ms/op
+WorkloadJitting  1: 1 op, 14598600.00 ns, 14.5986 ms/op
+
+OverheadWarmup   1: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   4: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   5: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadWarmup   6: 1 op, 200.00 ns, 200.0000 ns/op
+
+OverheadActual   1: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   2: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   4: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadActual   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   8: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   9: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  12: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  13: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  14: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  15: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  16: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  19: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  20: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 1553200.00 ns, 1.5532 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 1180100.00 ns, 1.1801 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 1179900.00 ns, 1.1799 ms/op
+// GC:  0 0 0 285200 1
+// Threading:  15 0 1
+
+// AfterAll
+// Benchmark Process 45772 has exited with code 0.
+
+Mean = 1.180 ms, StdErr = 0.000 ms (0.00%), N = 1, StdDev = 0.000 ms
+Min = 1.180 ms, Q1 = 1.180 ms, Median = 1.180 ms, Q3 = 1.180 ms, Max = 1.180 ms
+IQR = 0.000 ms, LowerFence = 1.180 ms, UpperFence = 1.180 ms
+ConfidenceInterval = [NaN ms; NaN ms] (CI 99.9%), Margin = NaN ms (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 1 (5.6%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// **************************
+// Benchmark: Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=9]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 8bea41da-22a8-4326-be01-9d1cd4fe1c81.dll --anonymousPipes 1304 1484 --benchmarkName "LAL.Benches.Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate(SignalSize: 128, KernelSize: 9)" --job "Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1" --benchmarkId 17 in D:\Project\LAL\Benchmarks\LAL.BenchmarkDotNet\bin\Release\net8.0\8bea41da-22a8-4326-be01-9d1cd4fe1c81\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.12
+// Runtime=.NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: Job-OTGITL(InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 455800.00 ns, 455.8000 us/op
+WorkloadJitting  1: 1 op, 2633300.00 ns, 2.6333 ms/op
+
+OverheadWarmup   1: 1 op, 300.00 ns, 300.0000 ns/op
+OverheadWarmup   2: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   5: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadWarmup   6: 1 op, 200.00 ns, 200.0000 ns/op
+
+OverheadActual   1: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   2: 1 op, 400.00 ns, 400.0000 ns/op
+OverheadActual   3: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   4: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   5: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   6: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   7: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual   8: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual   9: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  10: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  11: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  12: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  13: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  14: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  15: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  16: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  17: 1 op, 200.00 ns, 200.0000 ns/op
+OverheadActual  18: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  19: 1 op, 100.00 ns, 100.0000 ns/op
+OverheadActual  20: 1 op, 200.00 ns, 200.0000 ns/op
+
+WorkloadWarmup   1: 1 op, 834400.00 ns, 834.4000 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 828000.00 ns, 828.0000 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 827800.00 ns, 827.8000 us/op
+// GC:  0 0 0 400 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 37936 has exited with code 0.
+
+Mean = 827.800 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 827.800 μs, Q1 = 827.800 μs, Median = 827.800 μs, Q3 = 827.800 μs, Max = 827.800 μs
+IQR = 0.000 μs, LowerFence = 827.800 μs, UpperFence = 827.800 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ** Remained 0 (0.0%) benchmark(s) to run. Estimated finish 2026-04-13 13:25 (0h 0m from now) **
+Successfully reverted power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: 高效能)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\LAL.Benches.Convolution2DThresholdCalibrationBenchmarks-report.csv
+  BenchmarkDotNet.Artifacts\results\LAL.Benches.Convolution2DThresholdCalibrationBenchmarks-report-github.md
+  BenchmarkDotNet.Artifacts\results\LAL.Benches.Convolution2DThresholdCalibrationBenchmarks-report.html
+
+// * Detailed results *
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=5]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 66.700 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 66.700 μs, Q1 = 66.700 μs, Median = 66.700 μs, Q3 = 66.700 μs, Max = 66.700 μs
+IQR = 0.000 μs, LowerFence = 66.700 μs, UpperFence = 66.700 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[66.700 μs ; 66.701 μs) | @
+---------------------------------------------------
+
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=5]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 430.900 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 430.900 μs, Q1 = 430.900 μs, Median = 430.900 μs, Q3 = 430.900 μs, Max = 430.900 μs
+IQR = 0.000 μs, LowerFence = 430.900 μs, UpperFence = 430.900 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[430.899 μs ; 430.901 μs) | @
+---------------------------------------------------
+
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=5]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 68.200 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 68.200 μs, Q1 = 68.200 μs, Median = 68.200 μs, Q3 = 68.200 μs, Max = 68.200 μs
+IQR = 0.000 μs, LowerFence = 68.200 μs, UpperFence = 68.200 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[68.200 μs ; 68.201 μs) | @
+---------------------------------------------------
+
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=9]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 183.600 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 183.600 μs, Q1 = 183.600 μs, Median = 183.600 μs, Q3 = 183.600 μs, Max = 183.600 μs
+IQR = 0.000 μs, LowerFence = 183.600 μs, UpperFence = 183.600 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[183.600 μs ; 183.601 μs) | @
+---------------------------------------------------
+
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=9]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 618.100 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 618.100 μs, Q1 = 618.100 μs, Median = 618.100 μs, Q3 = 618.100 μs, Max = 618.100 μs
+IQR = 0.000 μs, LowerFence = 618.100 μs, UpperFence = 618.100 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[618.100 μs ; 618.101 μs) | @
+---------------------------------------------------
+
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=48, KernelSize=9]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 168.500 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 168.500 μs, Q1 = 168.500 μs, Median = 168.500 μs, Q3 = 168.500 μs, Max = 168.500 μs
+IQR = 0.000 μs, LowerFence = 168.500 μs, UpperFence = 168.500 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[168.500 μs ; 168.500 μs) | @
+---------------------------------------------------
+
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=5]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 101.100 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 101.100 μs, Q1 = 101.100 μs, Median = 101.100 μs, Q3 = 101.100 μs, Max = 101.100 μs
+IQR = 0.000 μs, LowerFence = 101.100 μs, UpperFence = 101.100 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[101.100 μs ; 101.100 μs) | @
+---------------------------------------------------
+
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=5]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 603.000 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 603.000 μs, Q1 = 603.000 μs, Median = 603.000 μs, Q3 = 603.000 μs, Max = 603.000 μs
+IQR = 0.000 μs, LowerFence = 603.000 μs, UpperFence = 603.000 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[603.000 μs ; 603.000 μs) | @
+---------------------------------------------------
+
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=5]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 81.150 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 81.150 μs, Q1 = 81.150 μs, Median = 81.150 μs, Q3 = 81.150 μs, Max = 81.150 μs
+IQR = 0.000 μs, LowerFence = 81.150 μs, UpperFence = 81.150 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[81.150 μs ; 81.150 μs) | @
+---------------------------------------------------
+
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=9]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 221.900 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 221.900 μs, Q1 = 221.900 μs, Median = 221.900 μs, Q3 = 221.900 μs, Max = 221.900 μs
+IQR = 0.000 μs, LowerFence = 221.900 μs, UpperFence = 221.900 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[221.899 μs ; 221.900 μs) | @
+---------------------------------------------------
+
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=9]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 745.100 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 745.100 μs, Q1 = 745.100 μs, Median = 745.100 μs, Q3 = 745.100 μs, Max = 745.100 μs
+IQR = 0.000 μs, LowerFence = 745.100 μs, UpperFence = 745.100 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[745.100 μs ; 745.101 μs) | @
+---------------------------------------------------
+
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=64, KernelSize=9]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 225.000 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 225.000 μs, Q1 = 225.000 μs, Median = 225.000 μs, Q3 = 225.000 μs, Max = 225.000 μs
+IQR = 0.000 μs, LowerFence = 225.000 μs, UpperFence = 225.000 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[225.000 μs ; 225.000 μs) | @
+---------------------------------------------------
+
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=5]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 317.700 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 317.700 μs, Q1 = 317.700 μs, Median = 317.700 μs, Q3 = 317.700 μs, Max = 317.700 μs
+IQR = 0.000 μs, LowerFence = 317.700 μs, UpperFence = 317.700 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[317.700 μs ; 317.700 μs) | @
+---------------------------------------------------
+
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=5]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 691.500 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 691.500 μs, Q1 = 691.500 μs, Median = 691.500 μs, Q3 = 691.500 μs, Max = 691.500 μs
+IQR = 0.000 μs, LowerFence = 691.500 μs, UpperFence = 691.500 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[691.500 μs ; 691.500 μs) | @
+---------------------------------------------------
+
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=5]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 329.800 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 329.800 μs, Q1 = 329.800 μs, Median = 329.800 μs, Q3 = 329.800 μs, Max = 329.800 μs
+IQR = 0.000 μs, LowerFence = 329.800 μs, UpperFence = 329.800 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[329.800 μs ; 329.800 μs) | @
+---------------------------------------------------
+
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=9]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 898.000 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 898.000 μs, Q1 = 898.000 μs, Median = 898.000 μs, Q3 = 898.000 μs, Max = 898.000 μs
+IQR = 0.000 μs, LowerFence = 898.000 μs, UpperFence = 898.000 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[898.000 μs ; 898.000 μs) | @
+---------------------------------------------------
+
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=9]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 1.180 ms, StdErr = 0.000 ms (0.00%), N = 1, StdDev = 0.000 ms
+Min = 1.180 ms, Q1 = 1.180 ms, Median = 1.180 ms, Q3 = 1.180 ms, Max = 1.180 ms
+IQR = 0.000 ms, LowerFence = 1.180 ms, UpperFence = 1.180 ms
+ConfidenceInterval = [NaN ms; NaN ms] (CI 99.9%), Margin = NaN ms (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[1.180 ms ; 1.180 ms) | @
+---------------------------------------------------
+
+Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Job-KFGJZP(Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1) [SignalSize=128, KernelSize=9]
+Runtime = .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 827.800 μs, StdErr = 0.000 μs (0.00%), N = 1, StdDev = 0.000 μs
+Min = 827.800 μs, Q1 = 827.800 μs, Median = 827.800 μs, Q3 = 827.800 μs, Max = 827.800 μs
+IQR = 0.000 μs, LowerFence = 827.800 μs, UpperFence = 827.800 μs
+ConfidenceInterval = [NaN μs; NaN μs] (CI 99.9%), Margin = NaN μs (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[827.799 μs ; 827.801 μs) | @
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet v0.13.12, Windows 11 (10.0.26100.2314)
+11th Gen Intel Core i7-11700 2.50GHz, 1 CPU, 16 logical and 8 physical cores
+.NET SDK 9.0.312
+  [Host]     : .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+  Job-KFGJZP : .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+
+Runtime=.NET 8.0  InvocationCount=1  IterationCount=1  
+LaunchCount=1  UnrollFactor=1  WarmupCount=1  
+
+| Method                        | SignalSize | KernelSize | Mean        | Error | Ratio | Allocated | Alloc Ratio |
+|------------------------------ |----------- |----------- |------------:|------:|------:|----------:|------------:|
+| Convolve2D_SequentialGate     | 48         | 5          |    66.70 μs |    NA |  1.00 |     400 B |        1.00 |
+| Convolve2D_ForcedParallelGate | 48         | 5          |   430.90 μs |    NA |  6.46 |   45776 B |      114.44 |
+| Convolve2D_AutoAdaptiveGate   | 48         | 5          |    68.20 μs |    NA |  1.02 |     400 B |        1.00 |
+|                               |            |            |             |       |       |           |             |
+| Convolve2D_SequentialGate     | 48         | 9          |   183.60 μs |    NA |  1.00 |     400 B |        1.00 |
+| Convolve2D_ForcedParallelGate | 48         | 9          |   618.10 μs |    NA |  3.37 |   49680 B |      124.20 |
+| Convolve2D_AutoAdaptiveGate   | 48         | 9          |   168.50 μs |    NA |  0.92 |     400 B |        1.00 |
+|                               |            |            |             |       |       |           |             |
+| Convolve2D_SequentialGate     | 64         | 5          |   101.10 μs |    NA |  1.00 |     400 B |        1.00 |
+| Convolve2D_ForcedParallelGate | 64         | 5          |   603.00 μs |    NA |  5.96 |   75472 B |      188.68 |
+| Convolve2D_AutoAdaptiveGate   | 64         | 5          |    81.15 μs |    NA |  0.80 |     400 B |        1.00 |
+|                               |            |            |             |       |       |           |             |
+| Convolve2D_SequentialGate     | 64         | 9          |   221.90 μs |    NA |  1.00 |     400 B |        1.00 |
+| Convolve2D_ForcedParallelGate | 64         | 9          |   745.10 μs |    NA |  3.36 |   80400 B |      201.00 |
+| Convolve2D_AutoAdaptiveGate   | 64         | 9          |   225.00 μs |    NA |  1.01 |     400 B |        1.00 |
+|                               |            |            |             |       |       |           |             |
+| Convolve2D_SequentialGate     | 128        | 5          |   317.70 μs |    NA |  1.00 |     400 B |        1.00 |
+| Convolve2D_ForcedParallelGate | 128        | 5          |   691.50 μs |    NA |  2.18 |  275880 B |      689.70 |
+| Convolve2D_AutoAdaptiveGate   | 128        | 5          |   329.80 μs |    NA |  1.04 |     400 B |        1.00 |
+|                               |            |            |             |       |       |           |             |
+| Convolve2D_SequentialGate     | 128        | 9          |   898.00 μs |    NA |  1.00 |     400 B |        1.00 |
+| Convolve2D_ForcedParallelGate | 128        | 9          | 1,179.90 μs |    NA |  1.31 |  285200 B |      713.00 |
+| Convolve2D_AutoAdaptiveGate   | 128        | 9          |   827.80 μs |    NA |  0.92 |     400 B |        1.00 |
+
+// * Warnings *
+MinIterationTime
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1     -> The minimum observed iteration time is 66.9000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1 -> The minimum observed iteration time is 431.1000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1   -> The minimum observed iteration time is 68.4000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1     -> The minimum observed iteration time is 183.8000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1 -> The minimum observed iteration time is 618.3000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1   -> The minimum observed iteration time is 168.7000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1     -> The minimum observed iteration time is 101.3000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1 -> The minimum observed iteration time is 603.2000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1   -> The minimum observed iteration time is 81.3000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1     -> The minimum observed iteration time is 222.0000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1 -> The minimum observed iteration time is 745.3000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1   -> The minimum observed iteration time is 225.2000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1     -> The minimum observed iteration time is 317.9000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1 -> The minimum observed iteration time is 691.7000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1   -> The minimum observed iteration time is 330.0000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_SequentialGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1     -> The minimum observed iteration time is 898.2000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_ForcedParallelGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1 -> The minimum observed iteration time is 1.1801 ms which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+  Convolution2DThresholdCalibrationBenchmarks.Convolve2D_AutoAdaptiveGate: Runtime=.NET 8.0, InvocationCount=1, IterationCount=1, LaunchCount=1, UnrollFactor=1, WarmupCount=1   -> The minimum observed iteration time is 828.0000 μs which is very small. It's recommended to increase it to at least 100.0000 ms using more operations.
+
+// * Legends *
+  SignalSize  : Value of the 'SignalSize' parameter
+  KernelSize  : Value of the 'KernelSize' parameter
+  Mean        : Arithmetic mean of all measurements
+  Error       : Half of 99.9% confidence interval
+  Ratio       : Mean of the ratio distribution ([Current]/[Baseline])
+  Allocated   : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  Alloc Ratio : Allocated memory ratio distribution ([Current]/[Baseline])
+  1 μs        : 1 Microsecond (0.000001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:00:05 (5.75 sec), executed benchmarks: 18
+
+Global total time: 00:00:10 (10.6 sec), executed benchmarks: 18
+// * Artifacts cleanup *
+Artifacts cleanup is finished

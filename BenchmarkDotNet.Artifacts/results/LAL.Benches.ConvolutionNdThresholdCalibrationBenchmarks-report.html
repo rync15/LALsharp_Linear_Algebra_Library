@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>LAL.Benches.ConvolutionNdThresholdCalibrationBenchmarks-20260413-171108</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.13.12, Windows 11 (10.0.26100.2314)
+11th Gen Intel Core i7-11700 2.50GHz, 1 CPU, 16 logical and 8 physical cores
+.NET SDK 9.0.312
+  [Host]     : .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+  Job-XOHDZW : .NET 8.0.25 (8.0.2526.11203), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+</code></pre>
+<pre><code>Runtime=.NET 8.0  IterationCount=6  LaunchCount=1  
+WarmupCount=2  
+</code></pre>
+
+<table>
+<thead><tr><th>Method               </th><th>SignalEdge</th><th>KernelEdge</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>ConvolveND_AutoAdaptiveGate</td><td>10</td><td>3</td><td>283.8 &mu;s</td><td>4.22 &mu;s</td><td>1.50 &mu;s</td><td>200 B</td>
+</tr><tr><td>ConvolveND_AutoAdaptiveGate</td><td>10</td><td>5</td><td>1,233.4 &mu;s</td><td>23.82 &mu;s</td><td>6.19 &mu;s</td><td>201 B</td>
+</tr><tr><td>ConvolveND_AutoAdaptiveGate</td><td>12</td><td>3</td><td>486.5 &mu;s</td><td>20.57 &mu;s</td><td>5.34 &mu;s</td><td>200 B</td>
+</tr><tr><td>ConvolveND_AutoAdaptiveGate</td><td>12</td><td>5</td><td>2,222.1 &mu;s</td><td>64.51 &mu;s</td><td>16.75 &mu;s</td><td>203 B</td>
+</tr><tr><td>ConvolveND_AutoAdaptiveGate</td><td>16</td><td>3</td><td>1,191.7 &mu;s</td><td>39.72 &mu;s</td><td>14.16 &mu;s</td><td>201 B</td>
+</tr><tr><td>ConvolveND_AutoAdaptiveGate</td><td>16</td><td>5</td><td>5,240.1 &mu;s</td><td>83.34 &mu;s</td><td>21.64 &mu;s</td><td>206 B</td>
+</tr></tbody></table>
+</body>
+</html>

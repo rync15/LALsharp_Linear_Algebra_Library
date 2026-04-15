@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="51b72a2d-ad93-46fa-8f1c-65e963f128b2" name="user@704DESKTOP 2026-04-14 13:12:11" runUser="704DESKTOP\user" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-04-14T13:12:11.4200946+08:00" queuing="2026-04-14T13:12:11.4200949+08:00" start="2026-04-14T13:12:10.9434530+08:00" finish="2026-04-14T13:12:11.4587625+08:00" />
+  <TestSettings name="default" id="d33b991f-29d4-4212-ae7c-91e7b952c35b">
+    <Deployment runDeploymentRoot="user_704DESKTOP_2026-04-14_13_12_11" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="a6dc0292-de55-4ea6-80a5-9ed6d876b15b" testId="44306889-2a0e-ae6b-e434-91275c3e2a79" testName="LAL.Tests.LinalgCore.SvdTests.SingularValues_ReturnsDiagonalSpectrum" computerName="704DESKTOP" duration="00:00:00.0002686" startTime="2026-04-14T13:12:11.3998336+08:00" endTime="2026-04-14T13:12:11.3998337+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6dc0292-de55-4ea6-80a5-9ed6d876b15b" />
+    <UnitTestResult executionId="cf1182f6-b194-4f5e-b5dd-79a62d757a57" testId="e5e19b83-78bc-95fc-2794-c4cd582c20bc" testName="LAL.Tests.LinalgCore.LuTests.FactorAndSolve_Complex_SolvesLinearSystem" computerName="704DESKTOP" duration="00:00:00.0019480" startTime="2026-04-14T13:12:11.4007634+08:00" endTime="2026-04-14T13:12:11.4007634+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf1182f6-b194-4f5e-b5dd-79a62d757a57" />
+    <UnitTestResult executionId="1d7128a6-867a-409c-855d-c97673e8a2c4" testId="39bd4cce-ca54-8f79-8a0e-d7d87a4c1698" testName="LAL.Tests.LinalgCore.DotTests.Dotu_Double_ReturnsExpectedValue" computerName="704DESKTOP" duration="00:00:00.0059198" startTime="2026-04-14T13:12:11.3998816+08:00" endTime="2026-04-14T13:12:11.3998816+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1d7128a6-867a-409c-855d-c97673e8a2c4" />
+    <UnitTestResult executionId="2752936b-3c6c-47e9-ad90-02f59ef7b499" testId="2187e066-9705-f87b-a53b-c180234b1f4c" testName="LAL.Tests.LinalgCore.EigenSolverTests.PowerIteration_FindsDominantEigenvalue" computerName="704DESKTOP" duration="00:00:00.0031587" startTime="2026-04-14T13:12:11.3763882+08:00" endTime="2026-04-14T13:12:11.3763883+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2752936b-3c6c-47e9-ad90-02f59ef7b499" />
+    <UnitTestResult executionId="c301d5fa-b07e-44c6-a594-a35d3f10f0ad" testId="d21b0aaf-f27a-43b7-bdb6-0390ff0aae0a" testName="LAL.Tests.LinalgCore.DotTests.Dotu_Float_ReturnsExpectedValue" computerName="704DESKTOP" duration="00:00:00.0020322" startTime="2026-04-14T13:12:11.4007852+08:00" endTime="2026-04-14T13:12:11.4007852+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c301d5fa-b07e-44c6-a594-a35d3f10f0ad" />
+    <UnitTestResult executionId="033547bc-2bff-4f8f-b4a0-6ee2db9080ee" testId="2d967733-a9c7-2552-4b92-e2bceba450e9" testName="LAL.Tests.LinalgCore.EigenSolverTests.PowerIteration_Complex_FindsDominantEigenvalue" computerName="704DESKTOP" duration="00:00:00.0020741" startTime="2026-04-14T13:12:11.4007116+08:00" endTime="2026-04-14T13:12:11.4007116+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="033547bc-2bff-4f8f-b4a0-6ee2db9080ee" />
+    <UnitTestResult executionId="cd957f9e-dd23-49d6-beac-5fd4feaa0df9" testId="8a8f465c-119b-1503-2777-6dc8b7a1c47e" testName="LAL.Tests.LinalgCore.AxpyTests.Compute_UpdatesYWithAlphaXPlusY" computerName="704DESKTOP" duration="00:00:00.0006750" startTime="2026-04-14T13:12:11.4008091+08:00" endTime="2026-04-14T13:12:11.4008092+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cd957f9e-dd23-49d6-beac-5fd4feaa0df9" />
+    <UnitTestResult executionId="3380a139-f772-4ee5-84e1-956e90cd808d" testId="8195e94d-bc0a-855f-1aac-9c57032b8b27" testName="LAL.Tests.LinalgCore.LuTests.DecomposeInPlace_ReturnsFalseForSingularMatrix" computerName="704DESKTOP" duration="00:00:00.0026509" startTime="2026-04-14T13:12:11.3763741+08:00" endTime="2026-04-14T13:12:11.3763742+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3380a139-f772-4ee5-84e1-956e90cd808d" />
+    <UnitTestResult executionId="e4b36ed2-bbe5-40c1-b095-a3ba1a1873e4" testId="da573448-4e80-4473-629c-d3009984c0f5" testName="LAL.Tests.LinalgCore.MatrixAnalysisTests.Eigenvalues2x2_WorksForSymmetricMatrix" computerName="704DESKTOP" duration="00:00:00.0031470" startTime="2026-04-14T13:12:11.3763804+08:00" endTime="2026-04-14T13:12:11.3763805+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e4b36ed2-bbe5-40c1-b095-a3ba1a1873e4" />
+    <UnitTestResult executionId="98c42e03-863d-4d9c-8d7e-b9f04a6a926b" testId="dcf7f6cc-3473-02b7-0192-c0393f92ba70" testName="LAL.Tests.LinalgCore.NormsTests.FloatNorms_ReturnExpectedValues" computerName="704DESKTOP" duration="00:00:00.0005574" startTime="2026-04-14T13:12:11.3998408+08:00" endTime="2026-04-14T13:12:11.3998408+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="98c42e03-863d-4d9c-8d7e-b9f04a6a926b" />
+    <UnitTestResult executionId="e3e24652-c062-46a8-8cad-9b1d79feba97" testId="22b3584e-b5c7-fcfd-35ee-8daee17a6913" testName="LAL.Tests.LinalgCore.AxpyTests.Compute_Float_UpdatesYWithAlphaXPlusY" computerName="704DESKTOP" duration="00:00:00.0090747" startTime="2026-04-14T13:12:11.4007943+08:00" endTime="2026-04-14T13:12:11.4007943+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e3e24652-c062-46a8-8cad-9b1d79feba97" />
+    <UnitTestResult executionId="fc539774-c36b-4c12-a6d2-cdf8324b58ce" testId="ab14fe0c-4339-0014-3883-868f910737a6" testName="LAL.Tests.LinalgCore.LuTests.FactorAndSolve_ReturnsFalseForNearSingularMatrixAtStrictTolerance" computerName="704DESKTOP" duration="00:00:00.0000834" startTime="2026-04-14T13:12:11.3998192+08:00" endTime="2026-04-14T13:12:11.3998192+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc539774-c36b-4c12-a6d2-cdf8324b58ce" />
+    <UnitTestResult executionId="1f7fb2c8-7eb6-4d21-bcd9-ffb75f573064" testId="b52057fe-4fad-1401-6b28-56bec7bd0253" testName="LAL.Tests.LinalgCore.LuTests.FactorAndSolve_SolvesLinearSystem" computerName="704DESKTOP" duration="00:00:00.0001370" startTime="2026-04-14T13:12:11.3997119+08:00" endTime="2026-04-14T13:12:11.3997119+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f7fb2c8-7eb6-4d21-bcd9-ffb75f573064" />
+    <UnitTestResult executionId="d97b00f2-32af-4ae0-b5d5-2807c4a48582" testId="4d1ad519-6cd9-ca7f-3c68-9d0720473f6e" testName="LAL.Tests.LinalgCore.MatrixAnalysisTests.DominantEigenvalue_WorksForDiagonalMatrix" computerName="704DESKTOP" duration="00:00:00.0001423" startTime="2026-04-14T13:12:11.3998000+08:00" endTime="2026-04-14T13:12:11.3998001+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d97b00f2-32af-4ae0-b5d5-2807c4a48582" />
+    <UnitTestResult executionId="67fe7865-6e01-4e56-93f4-0da266f097c3" testId="1b04eba7-2ed5-4b15-dc9e-378d7b5a78a6" testName="LAL.Tests.LinalgCore.DenseSolverTests.Solve_Complex_ComputesSolution" computerName="704DESKTOP" duration="00:00:00.0022431" startTime="2026-04-14T13:12:11.4007741+08:00" endTime="2026-04-14T13:12:11.4007741+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="67fe7865-6e01-4e56-93f4-0da266f097c3" />
+    <UnitTestResult executionId="e3577d5d-86ab-447b-a71f-329dfddfa6a2" testId="cb2b3bd6-de06-9842-54e0-3eda0cba8b26" testName="LAL.Tests.LinalgCore.NormsTests.ComplexNorms_ReturnExpectedValues" computerName="704DESKTOP" duration="00:00:00.0003104" startTime="2026-04-14T13:12:11.3998558+08:00" endTime="2026-04-14T13:12:11.3998558+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e3577d5d-86ab-447b-a71f-329dfddfa6a2" />
+    <UnitTestResult executionId="d2eae70a-ee27-4951-a645-6e943c081b95" testId="95d51773-adea-6140-c296-4644bbb36c64" testName="LAL.Tests.LinalgCore.AxpyTests.Compute_Complex_UpdatesYWithAlphaXPlusY" computerName="704DESKTOP" duration="00:00:00.0017932" startTime="2026-04-14T13:12:11.4008236+08:00" endTime="2026-04-14T13:12:11.4008236+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2eae70a-ee27-4951-a645-6e943c081b95" />
+    <UnitTestResult executionId="0a3a8487-61b3-4a91-9159-40368146524d" testId="8ee377cc-1b89-2ac3-0a9b-17ae30e59290" testName="LAL.Tests.LinalgCore.NormsTests.L1L2AndInfinity_ReturnExpectedValues" computerName="704DESKTOP" duration="00:00:00.0026768" startTime="2026-04-14T13:12:11.3761803+08:00" endTime="2026-04-14T13:12:11.3761804+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0a3a8487-61b3-4a91-9159-40368146524d" />
+    <UnitTestResult executionId="b0a614d1-b147-4d40-8730-b1dacaba94fa" testId="f4b158e4-9561-a823-c0f2-dbfa2294e99c" testName="LAL.Tests.LinalgCore.SvdTests.SingularValues_Complex_DiagonalSpectrumMatchesMagnitudes" computerName="704DESKTOP" duration="00:00:00.0034119" startTime="2026-04-14T13:12:11.3763920+08:00" endTime="2026-04-14T13:12:11.3763920+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b0a614d1-b147-4d40-8730-b1dacaba94fa" />
+    <UnitTestResult executionId="a8e1231b-6239-4e04-84d4-2b2061432f0f" testId="ff6c2344-39a8-756c-b878-965a68962158" testName="LAL.Tests.LinalgCore.DenseSolverTests.Solve_ComputesSolution" computerName="704DESKTOP" duration="00:00:00.0032588" startTime="2026-04-14T13:12:11.3746101+08:00" endTime="2026-04-14T13:12:11.3746260+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a8e1231b-6239-4e04-84d4-2b2061432f0f" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="LAL.Tests.LinalgCore.LuTests.FactorAndSolve_Complex_SolvesLinearSystem" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="e5e19b83-78bc-95fc-2794-c4cd582c20bc">
+      <Execution id="cf1182f6-b194-4f5e-b5dd-79a62d757a57" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.LuTests" name="FactorAndSolve_Complex_SolvesLinearSystem" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.MatrixAnalysisTests.Eigenvalues2x2_WorksForSymmetricMatrix" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="da573448-4e80-4473-629c-d3009984c0f5">
+      <Execution id="e4b36ed2-bbe5-40c1-b095-a3ba1a1873e4" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.MatrixAnalysisTests" name="Eigenvalues2x2_WorksForSymmetricMatrix" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.AxpyTests.Compute_Complex_UpdatesYWithAlphaXPlusY" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="95d51773-adea-6140-c296-4644bbb36c64">
+      <Execution id="d2eae70a-ee27-4951-a645-6e943c081b95" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.AxpyTests" name="Compute_Complex_UpdatesYWithAlphaXPlusY" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.NormsTests.FloatNorms_ReturnExpectedValues" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="dcf7f6cc-3473-02b7-0192-c0393f92ba70">
+      <Execution id="98c42e03-863d-4d9c-8d7e-b9f04a6a926b" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.NormsTests" name="FloatNorms_ReturnExpectedValues" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.DotTests.Dotu_Float_ReturnsExpectedValue" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="d21b0aaf-f27a-43b7-bdb6-0390ff0aae0a">
+      <Execution id="c301d5fa-b07e-44c6-a594-a35d3f10f0ad" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.DotTests" name="Dotu_Float_ReturnsExpectedValue" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.SvdTests.SingularValues_Complex_DiagonalSpectrumMatchesMagnitudes" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="f4b158e4-9561-a823-c0f2-dbfa2294e99c">
+      <Execution id="b0a614d1-b147-4d40-8730-b1dacaba94fa" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.SvdTests" name="SingularValues_Complex_DiagonalSpectrumMatchesMagnitudes" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.AxpyTests.Compute_UpdatesYWithAlphaXPlusY" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="8a8f465c-119b-1503-2777-6dc8b7a1c47e">
+      <Execution id="cd957f9e-dd23-49d6-beac-5fd4feaa0df9" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.AxpyTests" name="Compute_UpdatesYWithAlphaXPlusY" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.MatrixAnalysisTests.DominantEigenvalue_WorksForDiagonalMatrix" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="4d1ad519-6cd9-ca7f-3c68-9d0720473f6e">
+      <Execution id="d97b00f2-32af-4ae0-b5d5-2807c4a48582" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.MatrixAnalysisTests" name="DominantEigenvalue_WorksForDiagonalMatrix" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.LuTests.FactorAndSolve_ReturnsFalseForNearSingularMatrixAtStrictTolerance" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="ab14fe0c-4339-0014-3883-868f910737a6">
+      <Execution id="fc539774-c36b-4c12-a6d2-cdf8324b58ce" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.LuTests" name="FactorAndSolve_ReturnsFalseForNearSingularMatrixAtStrictTolerance" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.DenseSolverTests.Solve_ComputesSolution" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="ff6c2344-39a8-756c-b878-965a68962158">
+      <Execution id="a8e1231b-6239-4e04-84d4-2b2061432f0f" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.DenseSolverTests" name="Solve_ComputesSolution" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.SvdTests.SingularValues_ReturnsDiagonalSpectrum" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="44306889-2a0e-ae6b-e434-91275c3e2a79">
+      <Execution id="a6dc0292-de55-4ea6-80a5-9ed6d876b15b" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.SvdTests" name="SingularValues_ReturnsDiagonalSpectrum" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.NormsTests.L1L2AndInfinity_ReturnExpectedValues" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="8ee377cc-1b89-2ac3-0a9b-17ae30e59290">
+      <Execution id="0a3a8487-61b3-4a91-9159-40368146524d" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.NormsTests" name="L1L2AndInfinity_ReturnExpectedValues" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.DenseSolverTests.Solve_Complex_ComputesSolution" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="1b04eba7-2ed5-4b15-dc9e-378d7b5a78a6">
+      <Execution id="67fe7865-6e01-4e56-93f4-0da266f097c3" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.DenseSolverTests" name="Solve_Complex_ComputesSolution" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.AxpyTests.Compute_Float_UpdatesYWithAlphaXPlusY" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="22b3584e-b5c7-fcfd-35ee-8daee17a6913">
+      <Execution id="e3e24652-c062-46a8-8cad-9b1d79feba97" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.AxpyTests" name="Compute_Float_UpdatesYWithAlphaXPlusY" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.LuTests.DecomposeInPlace_ReturnsFalseForSingularMatrix" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="8195e94d-bc0a-855f-1aac-9c57032b8b27">
+      <Execution id="3380a139-f772-4ee5-84e1-956e90cd808d" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.LuTests" name="DecomposeInPlace_ReturnsFalseForSingularMatrix" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.DotTests.Dotu_Double_ReturnsExpectedValue" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="39bd4cce-ca54-8f79-8a0e-d7d87a4c1698">
+      <Execution id="1d7128a6-867a-409c-855d-c97673e8a2c4" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.DotTests" name="Dotu_Double_ReturnsExpectedValue" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.EigenSolverTests.PowerIteration_FindsDominantEigenvalue" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="2187e066-9705-f87b-a53b-c180234b1f4c">
+      <Execution id="2752936b-3c6c-47e9-ad90-02f59ef7b499" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.EigenSolverTests" name="PowerIteration_FindsDominantEigenvalue" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.EigenSolverTests.PowerIteration_Complex_FindsDominantEigenvalue" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="2d967733-a9c7-2552-4b92-e2bceba450e9">
+      <Execution id="033547bc-2bff-4f8f-b4a0-6ee2db9080ee" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.EigenSolverTests" name="PowerIteration_Complex_FindsDominantEigenvalue" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.NormsTests.ComplexNorms_ReturnExpectedValues" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="cb2b3bd6-de06-9842-54e0-3eda0cba8b26">
+      <Execution id="e3577d5d-86ab-447b-a71f-329dfddfa6a2" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.NormsTests" name="ComplexNorms_ReturnExpectedValues" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.LuTests.FactorAndSolve_SolvesLinearSystem" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="b52057fe-4fad-1401-6b28-56bec7bd0253">
+      <Execution id="1f7fb2c8-7eb6-4d21-bcd9-ffb75f573064" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.LuTests" name="FactorAndSolve_SolvesLinearSystem" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="44306889-2a0e-ae6b-e434-91275c3e2a79" executionId="a6dc0292-de55-4ea6-80a5-9ed6d876b15b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e5e19b83-78bc-95fc-2794-c4cd582c20bc" executionId="cf1182f6-b194-4f5e-b5dd-79a62d757a57" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="39bd4cce-ca54-8f79-8a0e-d7d87a4c1698" executionId="1d7128a6-867a-409c-855d-c97673e8a2c4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2187e066-9705-f87b-a53b-c180234b1f4c" executionId="2752936b-3c6c-47e9-ad90-02f59ef7b499" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d21b0aaf-f27a-43b7-bdb6-0390ff0aae0a" executionId="c301d5fa-b07e-44c6-a594-a35d3f10f0ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2d967733-a9c7-2552-4b92-e2bceba450e9" executionId="033547bc-2bff-4f8f-b4a0-6ee2db9080ee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8a8f465c-119b-1503-2777-6dc8b7a1c47e" executionId="cd957f9e-dd23-49d6-beac-5fd4feaa0df9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8195e94d-bc0a-855f-1aac-9c57032b8b27" executionId="3380a139-f772-4ee5-84e1-956e90cd808d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="da573448-4e80-4473-629c-d3009984c0f5" executionId="e4b36ed2-bbe5-40c1-b095-a3ba1a1873e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dcf7f6cc-3473-02b7-0192-c0393f92ba70" executionId="98c42e03-863d-4d9c-8d7e-b9f04a6a926b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22b3584e-b5c7-fcfd-35ee-8daee17a6913" executionId="e3e24652-c062-46a8-8cad-9b1d79feba97" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ab14fe0c-4339-0014-3883-868f910737a6" executionId="fc539774-c36b-4c12-a6d2-cdf8324b58ce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b52057fe-4fad-1401-6b28-56bec7bd0253" executionId="1f7fb2c8-7eb6-4d21-bcd9-ffb75f573064" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4d1ad519-6cd9-ca7f-3c68-9d0720473f6e" executionId="d97b00f2-32af-4ae0-b5d5-2807c4a48582" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1b04eba7-2ed5-4b15-dc9e-378d7b5a78a6" executionId="67fe7865-6e01-4e56-93f4-0da266f097c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cb2b3bd6-de06-9842-54e0-3eda0cba8b26" executionId="e3577d5d-86ab-447b-a71f-329dfddfa6a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="95d51773-adea-6140-c296-4644bbb36c64" executionId="d2eae70a-ee27-4951-a645-6e943c081b95" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8ee377cc-1b89-2ac3-0a9b-17ae30e59290" executionId="0a3a8487-61b3-4a91-9159-40368146524d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4b158e4-9561-a823-c0f2-dbfa2294e99c" executionId="b0a614d1-b147-4d40-8730-b1dacaba94fa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff6c2344-39a8-756c-b878-965a68962158" executionId="a8e1231b-6239-4e04-84d4-2b2061432f0f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="不在清單中的結果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有載入的結果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="20" executed="20" passed="20" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.25)&#xD;
+[xUnit.net 00:00:00.05]   Discovering: LAL.Tests&#xD;
+[xUnit.net 00:00:00.08]   Discovered:  LAL.Tests&#xD;
+[xUnit.net 00:00:00.08]   Starting:    LAL.Tests&#xD;
+[xUnit.net 00:00:00.15]   Finished:    LAL.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
