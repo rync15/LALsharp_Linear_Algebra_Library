@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="712c9066-61fd-4060-ad05-a6ee7d06ccc6" name="user@704DESKTOP 2026-04-14 13:12:52" runUser="704DESKTOP\user" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-04-14T13:12:52.9581372+08:00" queuing="2026-04-14T13:12:52.9581373+08:00" start="2026-04-14T13:12:52.4351470+08:00" finish="2026-04-14T13:12:52.9622289+08:00" />
+  <TestSettings name="default" id="56ab98bc-af02-4428-a418-70b6f6490848">
+    <Deployment runDeploymentRoot="user_704DESKTOP_2026-04-14_13_12_52" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="0ebc9e62-c41d-432a-b3b7-19ccbb2e2ce1" testId="896754a9-62d1-d9c3-7792-cfd7f042baaa" testName="LAL.Tests.TensorCore.BroadcastingTests.ComputeBroadcastStrides_SetsBroadcastAxisStrideToZero" computerName="704DESKTOP" duration="00:00:00.0004159" startTime="2026-04-14T13:12:52.8695099+08:00" endTime="2026-04-14T13:12:52.8695099+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0ebc9e62-c41d-432a-b3b7-19ccbb2e2ce1" />
+    <UnitTestResult executionId="077571b8-3450-4b01-aea7-8463d7a36348" testId="c271b1cd-f032-cc8f-fcfc-d4a86cf4c17d" testName="LAL.Tests.TensorCore.BroadcastingTests.BroadcastShapes_ReturnsExpectedShape" computerName="704DESKTOP" duration="00:00:00.0064783" startTime="2026-04-14T13:12:52.8673653+08:00" endTime="2026-04-14T13:12:52.8673790+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="077571b8-3450-4b01-aea7-8463d7a36348" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="LAL.Tests.TensorCore.BroadcastingTests.ComputeBroadcastStrides_SetsBroadcastAxisStrideToZero" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="896754a9-62d1-d9c3-7792-cfd7f042baaa">
+      <Execution id="0ebc9e62-c41d-432a-b3b7-19ccbb2e2ce1" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.TensorCore.BroadcastingTests" name="ComputeBroadcastStrides_SetsBroadcastAxisStrideToZero" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.TensorCore.BroadcastingTests.BroadcastShapes_ReturnsExpectedShape" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="c271b1cd-f032-cc8f-fcfc-d4a86cf4c17d">
+      <Execution id="077571b8-3450-4b01-aea7-8463d7a36348" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.TensorCore.BroadcastingTests" name="BroadcastShapes_ReturnsExpectedShape" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="896754a9-62d1-d9c3-7792-cfd7f042baaa" executionId="0ebc9e62-c41d-432a-b3b7-19ccbb2e2ce1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c271b1cd-f032-cc8f-fcfc-d4a86cf4c17d" executionId="077571b8-3450-4b01-aea7-8463d7a36348" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="不在清單中的結果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有載入的結果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.25)&#xD;
+[xUnit.net 00:00:00.05]   Discovering: LAL.Tests&#xD;
+[xUnit.net 00:00:00.08]   Discovered:  LAL.Tests&#xD;
+[xUnit.net 00:00:00.09]   Starting:    LAL.Tests&#xD;
+[xUnit.net 00:00:00.13]   Finished:    LAL.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

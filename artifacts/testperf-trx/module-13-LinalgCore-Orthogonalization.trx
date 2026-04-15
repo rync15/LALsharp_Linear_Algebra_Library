@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="8515fdfd-bd6d-4d0a-ad36-3fb413f04ff8" name="user@704DESKTOP 2026-04-14 13:12:16" runUser="704DESKTOP\user" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-04-14T13:12:16.6275791+08:00" queuing="2026-04-14T13:12:16.6275794+08:00" start="2026-04-14T13:12:16.0995743+08:00" finish="2026-04-14T13:12:16.6314744+08:00" />
+  <TestSettings name="default" id="236c50e2-cfd6-47e4-9f00-f1ec3901e97a">
+    <Deployment runDeploymentRoot="user_704DESKTOP_2026-04-14_13_12_16" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="792566e8-3da4-4878-a292-8aedeb83720e" testId="13c3de86-177e-7b0c-f3f5-de178a474abf" testName="LAL.Tests.LinalgCore.OrthogonalizationTests.OrthogonalProjection_Complex_ProjectsOntoBasis" computerName="704DESKTOP" duration="00:00:00.0033629" startTime="2026-04-14T13:12:16.5166343+08:00" endTime="2026-04-14T13:12:16.5166480+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="792566e8-3da4-4878-a292-8aedeb83720e" />
+    <UnitTestResult executionId="a3e57ccb-6599-4025-a436-a86bc49b39ec" testId="3cdf15a7-35d2-cda3-a318-d0f46248ec0c" testName="LAL.Tests.LinalgCore.OrthogonalizationTests.OrthogonalProjection_ProjectsOntoBasis" computerName="704DESKTOP" duration="00:00:00.0003261" startTime="2026-04-14T13:12:16.5224658+08:00" endTime="2026-04-14T13:12:16.5224659+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3e57ccb-6599-4025-a436-a86bc49b39ec" />
+    <UnitTestResult executionId="cdb7c791-d77f-4a3b-9bb0-6d4b50a68802" testId="82956bd3-be29-ccb9-4b26-6bbfae90764c" testName="LAL.Tests.LinalgCore.OrthogonalizationTests.GramSchmidtOrthonormalize_Complex_ReturnsOrthonormalBasis" computerName="704DESKTOP" duration="00:00:00.0013373" startTime="2026-04-14T13:12:16.5238400+08:00" endTime="2026-04-14T13:12:16.5238401+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cdb7c791-d77f-4a3b-9bb0-6d4b50a68802" />
+    <UnitTestResult executionId="95685260-580f-4e19-9ebc-463e2e17aa4c" testId="4e3a6f13-805b-5977-464a-7785453055b7" testName="LAL.Tests.LinalgCore.OrthogonalizationTests.GramSchmidtOrthonormalize_ReturnsOrthonormalBasis" computerName="704DESKTOP" duration="00:00:00.0058192" startTime="2026-04-14T13:12:16.5221162+08:00" endTime="2026-04-14T13:12:16.5221163+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="95685260-580f-4e19-9ebc-463e2e17aa4c" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="LAL.Tests.LinalgCore.OrthogonalizationTests.OrthogonalProjection_Complex_ProjectsOntoBasis" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="13c3de86-177e-7b0c-f3f5-de178a474abf">
+      <Execution id="792566e8-3da4-4878-a292-8aedeb83720e" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.OrthogonalizationTests" name="OrthogonalProjection_Complex_ProjectsOntoBasis" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.OrthogonalizationTests.OrthogonalProjection_ProjectsOntoBasis" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="3cdf15a7-35d2-cda3-a318-d0f46248ec0c">
+      <Execution id="a3e57ccb-6599-4025-a436-a86bc49b39ec" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.OrthogonalizationTests" name="OrthogonalProjection_ProjectsOntoBasis" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.OrthogonalizationTests.GramSchmidtOrthonormalize_Complex_ReturnsOrthonormalBasis" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="82956bd3-be29-ccb9-4b26-6bbfae90764c">
+      <Execution id="cdb7c791-d77f-4a3b-9bb0-6d4b50a68802" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.OrthogonalizationTests" name="GramSchmidtOrthonormalize_Complex_ReturnsOrthonormalBasis" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.OrthogonalizationTests.GramSchmidtOrthonormalize_ReturnsOrthonormalBasis" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="4e3a6f13-805b-5977-464a-7785453055b7">
+      <Execution id="95685260-580f-4e19-9ebc-463e2e17aa4c" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.OrthogonalizationTests" name="GramSchmidtOrthonormalize_ReturnsOrthonormalBasis" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="13c3de86-177e-7b0c-f3f5-de178a474abf" executionId="792566e8-3da4-4878-a292-8aedeb83720e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3cdf15a7-35d2-cda3-a318-d0f46248ec0c" executionId="a3e57ccb-6599-4025-a436-a86bc49b39ec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="82956bd3-be29-ccb9-4b26-6bbfae90764c" executionId="cdb7c791-d77f-4a3b-9bb0-6d4b50a68802" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4e3a6f13-805b-5977-464a-7785453055b7" executionId="95685260-580f-4e19-9ebc-463e2e17aa4c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="不在清單中的結果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有載入的結果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.25)&#xD;
+[xUnit.net 00:00:00.05]   Discovering: LAL.Tests&#xD;
+[xUnit.net 00:00:00.08]   Discovered:  LAL.Tests&#xD;
+[xUnit.net 00:00:00.08]   Starting:    LAL.Tests&#xD;
+[xUnit.net 00:00:00.12]   Finished:    LAL.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

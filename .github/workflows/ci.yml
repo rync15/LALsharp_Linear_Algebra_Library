@@ -1,0 +1,173 @@
+name: ci
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+
+jobs:
+  build-test-and-gate-a:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Enforce PR Gate A and Performance Evidence
+        if: github.event_name == 'pull_request'
+        shell: pwsh
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+        run: ./scripts/verify-pr-evidence.ps1
+
+      - name: Setup .NET 9
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Restore
+        run: dotnet restore LAL.sln
+
+      - name: Build
+        run: dotnet build LAL.sln --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test LAL.sln --configuration Release --no-build
+
+      - name: Verify Gate A Artifacts
+        shell: pwsh
+        run: ./scripts/verify-gate-a.ps1
+
+      - name: Verify W3 and Rules-32 Compliance
+        shell: pwsh
+        run: |
+          ./scripts/verify-w3.ps1
+          ./scripts/verify-w3-and-rules32.ps1
+
+      - name: Verify Traceability Dashboard
+        shell: pwsh
+        run: ./scripts/verify-traceability-dashboard.ps1
+
+      - name: Verify W5 Gate D
+        shell: pwsh
+        run: ./scripts/verify-w5.ps1 -SkipDotnetTest
+
+      - name: Upload Compliance and Traceability Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: governance-reports
+          path: |
+            artifacts/compliance/*.md
+            artifacts/traceability/*.md
+            artifacts/w5/*.md
+            ValidationReport.md
+          if-no-files-found: warn
+
+  perf-baseline:
+    runs-on: windows-latest
+    needs: build-test-and-gate-a
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET 9
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Restore
+        run: dotnet restore LAL.sln
+
+      - name: Run Baseline Benchmarks
+        run: dotnet run --project LAL.Benchmarks/LAL.Benchmarks.csproj --configuration Release
+
+      - name: Prepare Baseline Perf Reports
+        if: github.event_name == 'pull_request'
+        shell: pwsh
+        run: |
+          $baseRef = '${{ github.base_ref }}'
+          git fetch --no-tags origin $baseRef --depth=1
+          New-Item -ItemType Directory -Path artifacts/perf/baseline -Force | Out-Null
+
+          $reports = @('2026-04-10-batch1.md', '2026-04-10-batch2.md', '2026-04-10-batch3.md')
+          foreach ($report in $reports) {
+              $repoPath = "artifacts/perf/$report"
+              $exists = git ls-tree -r --name-only "origin/$baseRef" "$repoPath"
+              if ([string]::IsNullOrWhiteSpace($exists)) {
+                  Write-Output "No baseline report found on base branch for $repoPath"
+                  continue
+              }
+
+              $spec = "origin/{0}:{1}" -f $baseRef, $repoPath
+              git show $spec | Set-Content -Path "artifacts/perf/baseline/$report"
+          }
+
+      - name: Enforce Perf Regression Threshold
+        shell: pwsh
+        run: |
+          $summaryPath = "artifacts/perf/perf-threshold-summary.md"
+          if (Test-Path $summaryPath) {
+            Remove-Item $summaryPath -Force
+          }
+
+          $reports = @('2026-04-10-batch1.md', '2026-04-10-batch2.md', '2026-04-10-batch3.md')
+          foreach ($report in $reports) {
+              $current = "artifacts/perf/$report"
+              if (-not (Test-Path $current)) {
+                  continue
+              }
+
+              $baseline = "artifacts/perf/baseline/$report"
+            if ($report -eq '2026-04-10-batch1.md') {
+              ./scripts/verify-perf-regression.ps1 -CurrentReportPath $current -BaselineReportPath $baseline -MaxLatencyRegressionPercent 10 -MaxAllocationIncreaseBytes 64 -RequiredFunctions 'F100 Axpy','F101 Dotu','F103 Gemv','F104 Gemm' -SummaryOutputPath $summaryPath
+            }
+            elseif ($report -eq '2026-04-10-batch2.md') {
+              ./scripts/verify-perf-regression.ps1 -CurrentReportPath $current -BaselineReportPath $baseline -MaxLatencyRegressionPercent 10 -MaxAllocationIncreaseBytes 128 -RequiredFunctions 'F011 Reductions.Sum','F202 RK45.Step','F302 Brent.Solve','F306 GradientDescent.SolveScalar' -SummaryOutputPath $summaryPath
+            }
+            else {
+              ./scripts/verify-perf-regression.ps1 -CurrentReportPath $current -BaselineReportPath $baseline -MaxLatencyRegressionPercent 10 -MaxAllocationIncreaseBytes 128 -RequiredFunctions 'F102 Norms.L2','F105 Transpose.Matrix','F203 JacobianEstimator.EstimateForwardDifference' -SummaryOutputPath $summaryPath
+            }
+          }
+
+      - name: Publish Perf Summary
+        if: always()
+        shell: pwsh
+        run: |
+          $summaryPath = "artifacts/perf/perf-threshold-summary.md"
+          if (Test-Path $summaryPath) {
+            Get-Content $summaryPath | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+          }
+          else {
+            "No perf threshold summary generated." | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+          }
+
+      - name: Verify Perf Reports
+        shell: pwsh
+        run: |
+          $reports = Get-ChildItem -Path artifacts/perf/*.md -ErrorAction SilentlyContinue
+          if (-not $reports) {
+              throw 'No performance reports were generated under artifacts/perf.'
+          }
+
+      - name: Validate Gate C
+        shell: pwsh
+        run: ./scripts/verify-gate-c.ps1
+
+      - name: Upload Perf Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: perf-reports
+          path: artifacts/perf/*.md
+          if-no-files-found: error
+
+      - name: Upload Gate C Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: gate-c-report
+          path: artifacts/gate-c/*.md
+          if-no-files-found: error

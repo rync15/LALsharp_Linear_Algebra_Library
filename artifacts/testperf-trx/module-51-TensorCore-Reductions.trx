@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="854b480b-6e06-4e8a-ac09-f0577d229474" name="user@704DESKTOP 2026-04-14 13:13:04" runUser="704DESKTOP\user" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-04-14T13:13:04.3793770+08:00" queuing="2026-04-14T13:13:04.3793773+08:00" start="2026-04-14T13:13:03.8608861+08:00" finish="2026-04-14T13:13:04.3830966+08:00" />
+  <TestSettings name="default" id="ffc3d352-4af3-4c84-9107-dba8f4ca5f38">
+    <Deployment runDeploymentRoot="user_704DESKTOP_2026-04-14_13_13_04" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="676e1262-8451-433b-8a8f-9a5f1a0482d0" testId="ba098830-9239-cc6a-9f7c-ee3868a90c2c" testName="LAL.Tests.TensorCore.TypeCoverageTests.ReductionsMaskSortCumulative_SupportsFloatAndComplex" computerName="704DESKTOP" duration="00:00:00.0127362" startTime="2026-04-14T13:13:04.2903160+08:00" endTime="2026-04-14T13:13:04.2903160+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="676e1262-8451-433b-8a8f-9a5f1a0482d0" />
+    <UnitTestResult executionId="4ace053f-dc9b-4b17-b4dd-51df5394213c" testId="6976ddd2-0e78-fda4-f458-f9ed643d87a9" testName="LAL.Tests.TensorCore.ReductionsTests.Sum_AndMean_ReturnExpectedValues" computerName="704DESKTOP" duration="00:00:00.0001863" startTime="2026-04-14T13:13:04.2854293+08:00" endTime="2026-04-14T13:13:04.2854293+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ace053f-dc9b-4b17-b4dd-51df5394213c" />
+    <UnitTestResult executionId="49a26b7b-02f0-4bb7-b478-7a7072ddc065" testId="d116ae43-b10a-3da5-d75d-7712e7186e17" testName="LAL.Tests.TensorCore.ReductionsTests.MaxMinQuantileMedian_Work" computerName="704DESKTOP" duration="00:00:00.0040369" startTime="2026-04-14T13:13:04.2834994+08:00" endTime="2026-04-14T13:13:04.2835142+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="49a26b7b-02f0-4bb7-b478-7a7072ddc065" />
+    <UnitTestResult executionId="9678641d-0b0e-467e-8968-7f4f9dd05c2b" testId="5f7324fb-8f4e-9434-9935-3de25531c16e" testName="LAL.Tests.TensorCore.ReductionsTests.Variance_ReturnsPopulationVariance" computerName="704DESKTOP" duration="00:00:00.0001854" startTime="2026-04-14T13:13:04.2856964+08:00" endTime="2026-04-14T13:13:04.2856964+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9678641d-0b0e-467e-8968-7f4f9dd05c2b" />
+    <UnitTestResult executionId="a0c5cc87-6a7b-4afa-8df9-28e832fa88b1" testId="2874f058-1164-b566-c12d-1754c5ab9eef" testName="LAL.Tests.TensorCore.ReductionsTests.NanSafeReductions_IgnoreNaNValues" computerName="704DESKTOP" duration="00:00:00.0004931" startTime="2026-04-14T13:13:04.2857128+08:00" endTime="2026-04-14T13:13:04.2857128+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a0c5cc87-6a7b-4afa-8df9-28e832fa88b1" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="LAL.Tests.TensorCore.ReductionsTests.NanSafeReductions_IgnoreNaNValues" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="2874f058-1164-b566-c12d-1754c5ab9eef">
+      <Execution id="a0c5cc87-6a7b-4afa-8df9-28e832fa88b1" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.TensorCore.ReductionsTests" name="NanSafeReductions_IgnoreNaNValues" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.TensorCore.ReductionsTests.MaxMinQuantileMedian_Work" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="d116ae43-b10a-3da5-d75d-7712e7186e17">
+      <Execution id="49a26b7b-02f0-4bb7-b478-7a7072ddc065" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.TensorCore.ReductionsTests" name="MaxMinQuantileMedian_Work" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.TensorCore.ReductionsTests.Variance_ReturnsPopulationVariance" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="5f7324fb-8f4e-9434-9935-3de25531c16e">
+      <Execution id="9678641d-0b0e-467e-8968-7f4f9dd05c2b" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.TensorCore.ReductionsTests" name="Variance_ReturnsPopulationVariance" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.TensorCore.ReductionsTests.Sum_AndMean_ReturnExpectedValues" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="6976ddd2-0e78-fda4-f458-f9ed643d87a9">
+      <Execution id="4ace053f-dc9b-4b17-b4dd-51df5394213c" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.TensorCore.ReductionsTests" name="Sum_AndMean_ReturnExpectedValues" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.TensorCore.TypeCoverageTests.ReductionsMaskSortCumulative_SupportsFloatAndComplex" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="ba098830-9239-cc6a-9f7c-ee3868a90c2c">
+      <Execution id="676e1262-8451-433b-8a8f-9a5f1a0482d0" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.TensorCore.TypeCoverageTests" name="ReductionsMaskSortCumulative_SupportsFloatAndComplex" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="ba098830-9239-cc6a-9f7c-ee3868a90c2c" executionId="676e1262-8451-433b-8a8f-9a5f1a0482d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6976ddd2-0e78-fda4-f458-f9ed643d87a9" executionId="4ace053f-dc9b-4b17-b4dd-51df5394213c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d116ae43-b10a-3da5-d75d-7712e7186e17" executionId="49a26b7b-02f0-4bb7-b478-7a7072ddc065" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5f7324fb-8f4e-9434-9935-3de25531c16e" executionId="9678641d-0b0e-467e-8968-7f4f9dd05c2b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2874f058-1164-b566-c12d-1754c5ab9eef" executionId="a0c5cc87-6a7b-4afa-8df9-28e832fa88b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="不在清單中的結果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有載入的結果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="5" executed="5" passed="5" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.25)&#xD;
+[xUnit.net 00:00:00.05]   Discovering: LAL.Tests&#xD;
+[xUnit.net 00:00:00.08]   Discovered:  LAL.Tests&#xD;
+[xUnit.net 00:00:00.08]   Starting:    LAL.Tests&#xD;
+[xUnit.net 00:00:00.13]   Finished:    LAL.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

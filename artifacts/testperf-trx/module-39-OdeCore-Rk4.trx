@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="7b88e1f7-92d8-472d-80ee-355253eb624a" name="user@704DESKTOP 2026-04-14 13:12:49" runUser="704DESKTOP\user" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-04-14T13:12:49.2167673+08:00" queuing="2026-04-14T13:12:49.2167674+08:00" start="2026-04-14T13:12:48.6776855+08:00" finish="2026-04-14T13:12:49.2212713+08:00" />
+  <TestSettings name="default" id="97c8b8c8-25d8-4806-acf2-5029e719d742">
+    <Deployment runDeploymentRoot="user_704DESKTOP_2026-04-14_13_12_49" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="569fe076-6c62-4d69-8f82-69ad0bcd481f" testId="2dcc7e2b-a15b-7c4a-1dc2-dfad7241d721" testName="LAL.Tests.OdeCore.Rk4Tests.Step_ProducesFourthOrderEstimate" computerName="704DESKTOP" duration="00:00:00.0008782" startTime="2026-04-14T13:12:49.1190826+08:00" endTime="2026-04-14T13:12:49.1190826+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="569fe076-6c62-4d69-8f82-69ad0bcd481f" />
+    <UnitTestResult executionId="5bb6e688-1fb1-4092-be02-c7cb5dd0ee9c" testId="16fec468-74ec-9475-26c1-7aa49b9b3ec1" testName="LAL.Tests.OdeCore.Rk4Tests.Step_Float_ProducesFourthOrderEstimate" computerName="704DESKTOP" duration="00:00:00.0044060" startTime="2026-04-14T13:12:49.1170363+08:00" endTime="2026-04-14T13:12:49.1170503+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5bb6e688-1fb1-4092-be02-c7cb5dd0ee9c" />
+    <UnitTestResult executionId="8a0989d2-9a81-4c99-b6d1-0e0799b39c2a" testId="c86ee620-37ab-7d64-6e91-e7b89b974f48" testName="LAL.Tests.OdeCore.Rk45Tests.Step_Float_ProducesAccurateEstimateForExpGrowth" computerName="704DESKTOP" duration="00:00:00.0024139" startTime="2026-04-14T13:12:49.1192441+08:00" endTime="2026-04-14T13:12:49.1192442+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8a0989d2-9a81-4c99-b6d1-0e0799b39c2a" />
+    <UnitTestResult executionId="77b7b1ca-0171-4efe-a8eb-93ad3af60e03" testId="7fae3448-6349-ca0b-d264-c740bc06c681" testName="LAL.Tests.OdeCore.Rk45Tests.Step_Complex_ProducesAccurateEstimateForExpGrowth" computerName="704DESKTOP" duration="00:00:00.0057321" startTime="2026-04-14T13:12:49.1184953+08:00" endTime="2026-04-14T13:12:49.1184953+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="77b7b1ca-0171-4efe-a8eb-93ad3af60e03" />
+    <UnitTestResult executionId="35238b7e-7456-41d8-b197-4b0ababcf0c0" testId="39084b3c-a51d-dd2c-2bd9-fc86f6ed4784" testName="LAL.Tests.OdeCore.Rk45Tests.Step_ProducesAccurateEstimateForExpGrowth" computerName="704DESKTOP" duration="00:00:00.0024501" startTime="2026-04-14T13:12:49.1216228+08:00" endTime="2026-04-14T13:12:49.1216229+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="35238b7e-7456-41d8-b197-4b0ababcf0c0" />
+    <UnitTestResult executionId="503ac744-e11d-42d3-a080-b2e0cd30abfd" testId="44ac3544-7334-7fa8-63ce-ef68e40d80c1" testName="LAL.Tests.OdeCore.Rk4Tests.Step_Complex_ProducesFourthOrderEstimate" computerName="704DESKTOP" duration="00:00:00.0013421" startTime="2026-04-14T13:12:49.1192335+08:00" endTime="2026-04-14T13:12:49.1192335+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="503ac744-e11d-42d3-a080-b2e0cd30abfd" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="LAL.Tests.OdeCore.Rk45Tests.Step_Float_ProducesAccurateEstimateForExpGrowth" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="c86ee620-37ab-7d64-6e91-e7b89b974f48">
+      <Execution id="8a0989d2-9a81-4c99-b6d1-0e0799b39c2a" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.OdeCore.Rk45Tests" name="Step_Float_ProducesAccurateEstimateForExpGrowth" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.OdeCore.Rk4Tests.Step_Float_ProducesFourthOrderEstimate" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="16fec468-74ec-9475-26c1-7aa49b9b3ec1">
+      <Execution id="5bb6e688-1fb1-4092-be02-c7cb5dd0ee9c" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.OdeCore.Rk4Tests" name="Step_Float_ProducesFourthOrderEstimate" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.OdeCore.Rk4Tests.Step_Complex_ProducesFourthOrderEstimate" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="44ac3544-7334-7fa8-63ce-ef68e40d80c1">
+      <Execution id="503ac744-e11d-42d3-a080-b2e0cd30abfd" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.OdeCore.Rk4Tests" name="Step_Complex_ProducesFourthOrderEstimate" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.OdeCore.Rk4Tests.Step_ProducesFourthOrderEstimate" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="2dcc7e2b-a15b-7c4a-1dc2-dfad7241d721">
+      <Execution id="569fe076-6c62-4d69-8f82-69ad0bcd481f" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.OdeCore.Rk4Tests" name="Step_ProducesFourthOrderEstimate" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.OdeCore.Rk45Tests.Step_Complex_ProducesAccurateEstimateForExpGrowth" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="7fae3448-6349-ca0b-d264-c740bc06c681">
+      <Execution id="77b7b1ca-0171-4efe-a8eb-93ad3af60e03" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.OdeCore.Rk45Tests" name="Step_Complex_ProducesAccurateEstimateForExpGrowth" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.OdeCore.Rk45Tests.Step_ProducesAccurateEstimateForExpGrowth" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="39084b3c-a51d-dd2c-2bd9-fc86f6ed4784">
+      <Execution id="35238b7e-7456-41d8-b197-4b0ababcf0c0" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.OdeCore.Rk45Tests" name="Step_ProducesAccurateEstimateForExpGrowth" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="2dcc7e2b-a15b-7c4a-1dc2-dfad7241d721" executionId="569fe076-6c62-4d69-8f82-69ad0bcd481f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16fec468-74ec-9475-26c1-7aa49b9b3ec1" executionId="5bb6e688-1fb1-4092-be02-c7cb5dd0ee9c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c86ee620-37ab-7d64-6e91-e7b89b974f48" executionId="8a0989d2-9a81-4c99-b6d1-0e0799b39c2a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7fae3448-6349-ca0b-d264-c740bc06c681" executionId="77b7b1ca-0171-4efe-a8eb-93ad3af60e03" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="39084b3c-a51d-dd2c-2bd9-fc86f6ed4784" executionId="35238b7e-7456-41d8-b197-4b0ababcf0c0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="44ac3544-7334-7fa8-63ce-ef68e40d80c1" executionId="503ac744-e11d-42d3-a080-b2e0cd30abfd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="不在清單中的結果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有載入的結果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="6" executed="6" passed="6" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.25)&#xD;
+[xUnit.net 00:00:00.05]   Discovering: LAL.Tests&#xD;
+[xUnit.net 00:00:00.08]   Discovered:  LAL.Tests&#xD;
+[xUnit.net 00:00:00.09]   Starting:    LAL.Tests&#xD;
+[xUnit.net 00:00:00.13]   Finished:    LAL.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

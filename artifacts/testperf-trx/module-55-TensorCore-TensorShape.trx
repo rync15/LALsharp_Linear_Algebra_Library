@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="50872bd1-66f3-4682-bf54-f636cc8dc215" name="user@704DESKTOP 2026-04-14 13:13:09" runUser="704DESKTOP\user" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-04-14T13:13:09.4507562+08:00" queuing="2026-04-14T13:13:09.4507563+08:00" start="2026-04-14T13:13:08.8813036+08:00" finish="2026-04-14T13:13:09.4547190+08:00" />
+  <TestSettings name="default" id="206953f9-e774-4ee0-ae6a-8a2fb5939225">
+    <Deployment runDeploymentRoot="user_704DESKTOP_2026-04-14_13_13_09" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="1b4629bd-c1fb-4887-98d5-4a4be4eece5b" testId="d36882a9-ffeb-f601-75a1-bf4a1085606a" testName="LAL.Tests.TensorCore.TensorShapeTests.ComputeRowMajorStrides_ReturnsExpectedValues" computerName="704DESKTOP" duration="00:00:00.0041922" startTime="2026-04-14T13:13:09.3559016+08:00" endTime="2026-04-14T13:13:09.3559017+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1b4629bd-c1fb-4887-98d5-4a4be4eece5b" />
+    <UnitTestResult executionId="84c5df76-9929-436e-bfa5-3e6c1347a2f3" testId="3c7ce32b-7b14-0fc4-8dfc-68d92827619c" testName="LAL.Tests.TensorCore.TensorShapeTests.GetOffset_ReturnsExpectedOffset" computerName="704DESKTOP" duration="00:00:00.0034009" startTime="2026-04-14T13:13:09.3520481+08:00" endTime="2026-04-14T13:13:09.3520616+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="84c5df76-9929-436e-bfa5-3e6c1347a2f3" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="LAL.Tests.TensorCore.TensorShapeTests.ComputeRowMajorStrides_ReturnsExpectedValues" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="d36882a9-ffeb-f601-75a1-bf4a1085606a">
+      <Execution id="1b4629bd-c1fb-4887-98d5-4a4be4eece5b" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.TensorCore.TensorShapeTests" name="ComputeRowMajorStrides_ReturnsExpectedValues" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.TensorCore.TensorShapeTests.GetOffset_ReturnsExpectedOffset" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="3c7ce32b-7b14-0fc4-8dfc-68d92827619c">
+      <Execution id="84c5df76-9929-436e-bfa5-3e6c1347a2f3" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.TensorCore.TensorShapeTests" name="GetOffset_ReturnsExpectedOffset" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="d36882a9-ffeb-f601-75a1-bf4a1085606a" executionId="1b4629bd-c1fb-4887-98d5-4a4be4eece5b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3c7ce32b-7b14-0fc4-8dfc-68d92827619c" executionId="84c5df76-9929-436e-bfa5-3e6c1347a2f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="不在清單中的結果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有載入的結果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.25)&#xD;
+[xUnit.net 00:00:00.05]   Discovering: LAL.Tests&#xD;
+[xUnit.net 00:00:00.09]   Discovered:  LAL.Tests&#xD;
+[xUnit.net 00:00:00.09]   Starting:    LAL.Tests&#xD;
+[xUnit.net 00:00:00.13]   Finished:    LAL.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

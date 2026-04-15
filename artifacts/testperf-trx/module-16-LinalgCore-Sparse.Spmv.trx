@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="949919a0-ab76-4454-b018-47697a88a99b" name="user@704DESKTOP 2026-04-14 13:12:20" runUser="704DESKTOP\user" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-04-14T13:12:20.4061222+08:00" queuing="2026-04-14T13:12:20.4061223+08:00" start="2026-04-14T13:12:19.8860937+08:00" finish="2026-04-14T13:12:20.4101001+08:00" />
+  <TestSettings name="default" id="d4e3ebbc-cf92-49ea-9fba-2b31af228caa">
+    <Deployment runDeploymentRoot="user_704DESKTOP_2026-04-14_13_12_20" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="f5032e9a-ef73-43e4-808c-5fe0c76cfb4f" testId="264f467c-a465-978e-da52-ca421c6927dc" testName="LAL.Tests.LinalgCore.Sparse.SpmvTests.CscMultiply_Complex_ComputesRowProducts" computerName="704DESKTOP" duration="00:00:00.0038492" startTime="2026-04-14T13:12:20.3140402+08:00" endTime="2026-04-14T13:12:20.3140538+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f5032e9a-ef73-43e4-808c-5fe0c76cfb4f" />
+    <UnitTestResult executionId="27a524b6-18a1-4203-a4f3-9361f725f04b" testId="b35df7c0-ed3f-28e0-11ff-98444444bfad" testName="LAL.Tests.LinalgCore.Sparse.SpmvTests.CscMultiply_ComputesRowProducts" computerName="704DESKTOP" duration="00:00:00.0056502" startTime="2026-04-14T13:12:20.3198979+08:00" endTime="2026-04-14T13:12:20.3198980+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="27a524b6-18a1-4203-a4f3-9361f725f04b" />
+    <UnitTestResult executionId="a337a919-312b-4c5a-a9e6-095ac981decf" testId="ad1f4685-92db-0402-485c-0b2ff7a94819" testName="LAL.Tests.LinalgCore.Sparse.SpmvTests.CsrMultiply_ComputesRowProducts" computerName="704DESKTOP" duration="00:00:00.0003685" startTime="2026-04-14T13:12:20.3203011+08:00" endTime="2026-04-14T13:12:20.3203011+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a337a919-312b-4c5a-a9e6-095ac981decf" />
+    <UnitTestResult executionId="a99a12dd-0dd0-4461-86d1-325a0d60ad5a" testId="b371d22f-0b47-61ef-268d-2c4c8af23b19" testName="LAL.Tests.LinalgCore.Sparse.SpmvTests.CsrMultiply_Complex_ComputesRowProducts" computerName="704DESKTOP" duration="00:00:00.0004517" startTime="2026-04-14T13:12:20.3158830+08:00" endTime="2026-04-14T13:12:20.3158830+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a99a12dd-0dd0-4461-86d1-325a0d60ad5a" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="LAL.Tests.LinalgCore.Sparse.SpmvTests.CsrMultiply_ComputesRowProducts" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="ad1f4685-92db-0402-485c-0b2ff7a94819">
+      <Execution id="a337a919-312b-4c5a-a9e6-095ac981decf" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.Sparse.SpmvTests" name="CsrMultiply_ComputesRowProducts" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.Sparse.SpmvTests.CsrMultiply_Complex_ComputesRowProducts" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="b371d22f-0b47-61ef-268d-2c4c8af23b19">
+      <Execution id="a99a12dd-0dd0-4461-86d1-325a0d60ad5a" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.Sparse.SpmvTests" name="CsrMultiply_Complex_ComputesRowProducts" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.Sparse.SpmvTests.CscMultiply_ComputesRowProducts" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="b35df7c0-ed3f-28e0-11ff-98444444bfad">
+      <Execution id="27a524b6-18a1-4203-a4f3-9361f725f04b" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.Sparse.SpmvTests" name="CscMultiply_ComputesRowProducts" />
+    </UnitTest>
+    <UnitTest name="LAL.Tests.LinalgCore.Sparse.SpmvTests.CscMultiply_Complex_ComputesRowProducts" storage="d:\project\lal\lal.tests\bin\release\net8.0\lal.tests.dll" id="264f467c-a465-978e-da52-ca421c6927dc">
+      <Execution id="f5032e9a-ef73-43e4-808c-5fe0c76cfb4f" />
+      <TestMethod codeBase="D:\Project\LAL\LAL.Tests\bin\Release\net8.0\LAL.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="LAL.Tests.LinalgCore.Sparse.SpmvTests" name="CscMultiply_Complex_ComputesRowProducts" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="264f467c-a465-978e-da52-ca421c6927dc" executionId="f5032e9a-ef73-43e4-808c-5fe0c76cfb4f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b35df7c0-ed3f-28e0-11ff-98444444bfad" executionId="27a524b6-18a1-4203-a4f3-9361f725f04b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ad1f4685-92db-0402-485c-0b2ff7a94819" executionId="a337a919-312b-4c5a-a9e6-095ac981decf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b371d22f-0b47-61ef-268d-2c4c8af23b19" executionId="a99a12dd-0dd0-4461-86d1-325a0d60ad5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="不在清單中的結果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有載入的結果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.25)&#xD;
+[xUnit.net 00:00:00.05]   Discovering: LAL.Tests&#xD;
+[xUnit.net 00:00:00.08]   Discovered:  LAL.Tests&#xD;
+[xUnit.net 00:00:00.08]   Starting:    LAL.Tests&#xD;
+[xUnit.net 00:00:00.13]   Finished:    LAL.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
